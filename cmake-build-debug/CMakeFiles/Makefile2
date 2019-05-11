@@ -50,19 +50,19 @@ cmake_force:
 SHELL = /bin/sh
 
 # The CMake executable.
-CMAKE_COMMAND = /Applications/CLion.app/Contents/bin/cmake/mac/bin/cmake
+CMAKE_COMMAND = /cygdrive/c/Users/Milan/.CLion2019.1/system/cygwin_cmake/bin/cmake.exe
 
 # The command to remove a file.
-RM = /Applications/CLion.app/Contents/bin/cmake/mac/bin/cmake -E remove -f
+RM = /cygdrive/c/Users/Milan/.CLion2019.1/system/cygwin_cmake/bin/cmake.exe -E remove -f
 
 # Escaping for special characters.
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /Users/vumilan/CLionProjects/PA2/semwork/simple_spreadsheet
+CMAKE_SOURCE_DIR = /cygdrive/c/Users/Milan/CLionProjects/simple_spreadsheet
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /Users/vumilan/CLionProjects/PA2/semwork/simple_spreadsheet/cmake-build-debug
+CMAKE_BINARY_DIR = /cygdrive/c/Users/Milan/CLionProjects/simple_spreadsheet/cmake-build-debug
 
 #=============================================================================
 # Target rules for target CMakeFiles/simple_spreadsheet.dir
@@ -71,7 +71,7 @@ CMAKE_BINARY_DIR = /Users/vumilan/CLionProjects/PA2/semwork/simple_spreadsheet/c
 CMakeFiles/simple_spreadsheet.dir/all:
 	$(MAKE) -f CMakeFiles/simple_spreadsheet.dir/build.make CMakeFiles/simple_spreadsheet.dir/depend
 	$(MAKE) -f CMakeFiles/simple_spreadsheet.dir/build.make CMakeFiles/simple_spreadsheet.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Users/vumilan/CLionProjects/PA2/semwork/simple_spreadsheet/cmake-build-debug/CMakeFiles --progress-num=1,2 "Built target simple_spreadsheet"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/cygdrive/c/Users/Milan/CLionProjects/simple_spreadsheet/cmake-build-debug/CMakeFiles --progress-num=1,2,3,4,5,6,7,8,9 "Built target simple_spreadsheet"
 .PHONY : CMakeFiles/simple_spreadsheet.dir/all
 
 # Include target in all.
@@ -81,9 +81,9 @@ all: CMakeFiles/simple_spreadsheet.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/simple_spreadsheet.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/vumilan/CLionProjects/PA2/semwork/simple_spreadsheet/cmake-build-debug/CMakeFiles 2
+	$(CMAKE_COMMAND) -E cmake_progress_start /cygdrive/c/Users/Milan/CLionProjects/simple_spreadsheet/cmake-build-debug/CMakeFiles 9
 	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/simple_spreadsheet.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/vumilan/CLionProjects/PA2/semwork/simple_spreadsheet/cmake-build-debug/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /cygdrive/c/Users/Milan/CLionProjects/simple_spreadsheet/cmake-build-debug/CMakeFiles 0
 .PHONY : CMakeFiles/simple_spreadsheet.dir/rule
 
 # Convenience name for target.

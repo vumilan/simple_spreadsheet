@@ -6,27 +6,11 @@
 
 #IncludeRegexTransform: 
 
-/Users/vumilan/CLionProjects/PA2/semwork/simple_spreadsheet/main.cpp
-iostream
--
-cstring
--
-cstdlib
--
+/cygdrive/c/Users/Milan/CLionProjects/simple_spreadsheet/Cell.cpp
+Cell.h
+/cygdrive/c/Users/Milan/CLionProjects/simple_spreadsheet/Cell.h
+
+/cygdrive/c/Users/Milan/CLionProjects/simple_spreadsheet/Cell.h
 memory
--
-set
--
-map
--
-vector
--
-sstream
--
-string
--
-fstream
--
-ncurses.h
 -
 

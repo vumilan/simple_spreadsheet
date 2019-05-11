@@ -8,82 +8,124 @@
 		<Option virtualFolders="CMake Files\;"/>
 		<Build>
 			<Target title="all">
-				<Option working_dir="/Users/vumilan/CLionProjects/PA2/semwork/simple_spreadsheet/cmake-build-debug"/>
+				<Option working_dir="/cygdrive/c/Users/Milan/CLionProjects/simple_spreadsheet/cmake-build-debug"/>
 				<Option type="4"/>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j4 -f &quot;/Users/vumilan/CLionProjects/PA2/semwork/simple_spreadsheet/cmake-build-debug/Makefile&quot;  VERBOSE=1 all"/>
-					<CompileFile command="/usr/bin/make -j4 -f &quot;/Users/vumilan/CLionProjects/PA2/semwork/simple_spreadsheet/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j4 -f &quot;/Users/vumilan/CLionProjects/PA2/semwork/simple_spreadsheet/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j4 -f &quot;/Users/vumilan/CLionProjects/PA2/semwork/simple_spreadsheet/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="C:/cygwin64/bin/make.exe -j8 -f &quot;/cygdrive/c/Users/Milan/CLionProjects/simple_spreadsheet/cmake-build-debug/Makefile&quot;  VERBOSE=1 all"/>
+					<CompileFile command="C:/cygwin64/bin/make.exe -j8 -f &quot;/cygdrive/c/Users/Milan/CLionProjects/simple_spreadsheet/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="C:/cygwin64/bin/make.exe -j8 -f &quot;/cygdrive/c/Users/Milan/CLionProjects/simple_spreadsheet/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="C:/cygwin64/bin/make.exe -j8 -f &quot;/cygdrive/c/Users/Milan/CLionProjects/simple_spreadsheet/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="rebuild_cache">
-				<Option working_dir="/Users/vumilan/CLionProjects/PA2/semwork/simple_spreadsheet/cmake-build-debug"/>
+				<Option working_dir="/cygdrive/c/Users/Milan/CLionProjects/simple_spreadsheet/cmake-build-debug"/>
 				<Option type="4"/>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j4 -f &quot;/Users/vumilan/CLionProjects/PA2/semwork/simple_spreadsheet/cmake-build-debug/Makefile&quot;  VERBOSE=1 rebuild_cache"/>
-					<CompileFile command="/usr/bin/make -j4 -f &quot;/Users/vumilan/CLionProjects/PA2/semwork/simple_spreadsheet/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j4 -f &quot;/Users/vumilan/CLionProjects/PA2/semwork/simple_spreadsheet/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j4 -f &quot;/Users/vumilan/CLionProjects/PA2/semwork/simple_spreadsheet/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-				</MakeCommands>
-			</Target>
-			<Target title="edit_cache">
-				<Option working_dir="/Users/vumilan/CLionProjects/PA2/semwork/simple_spreadsheet/cmake-build-debug"/>
-				<Option type="4"/>
-				<MakeCommands>
-					<Build command="/usr/bin/make -j4 -f &quot;/Users/vumilan/CLionProjects/PA2/semwork/simple_spreadsheet/cmake-build-debug/Makefile&quot;  VERBOSE=1 edit_cache"/>
-					<CompileFile command="/usr/bin/make -j4 -f &quot;/Users/vumilan/CLionProjects/PA2/semwork/simple_spreadsheet/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j4 -f &quot;/Users/vumilan/CLionProjects/PA2/semwork/simple_spreadsheet/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j4 -f &quot;/Users/vumilan/CLionProjects/PA2/semwork/simple_spreadsheet/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="C:/cygwin64/bin/make.exe -j8 -f &quot;/cygdrive/c/Users/Milan/CLionProjects/simple_spreadsheet/cmake-build-debug/Makefile&quot;  VERBOSE=1 rebuild_cache"/>
+					<CompileFile command="C:/cygwin64/bin/make.exe -j8 -f &quot;/cygdrive/c/Users/Milan/CLionProjects/simple_spreadsheet/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="C:/cygwin64/bin/make.exe -j8 -f &quot;/cygdrive/c/Users/Milan/CLionProjects/simple_spreadsheet/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="C:/cygwin64/bin/make.exe -j8 -f &quot;/cygdrive/c/Users/Milan/CLionProjects/simple_spreadsheet/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="simple_spreadsheet">
-				<Option output="/Users/vumilan/CLionProjects/PA2/semwork/simple_spreadsheet/cmake-build-debug/simple_spreadsheet" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="/Users/vumilan/CLionProjects/PA2/semwork/simple_spreadsheet/cmake-build-debug"/>
+				<Option output="/cygdrive/c/Users/Milan/CLionProjects/simple_spreadsheet/cmake-build-debug/simple_spreadsheet.exe" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/cygdrive/c/Users/Milan/CLionProjects/simple_spreadsheet/cmake-build-debug"/>
 				<Option object_output="./"/>
 				<Option type="1"/>
 				<Option compiler="gcc"/>
 				<Compiler>
-					<Add directory="/Library/Developer/CommandLineTools/usr/include/c++/v1"/>
-					<Add directory="/usr/local/include"/>
-					<Add directory="/Library/Developer/CommandLineTools/usr/lib/clang/10.0.0/include"/>
-					<Add directory="/Library/Developer/CommandLineTools/usr/include"/>
-					<Add directory="/System/Library/Frameworks"/>
-					<Add directory="/Library/Frameworks"/>
+					<Add directory="/usr/lib/gcc/x86_64-pc-cygwin/7.4.0/include/c++"/>
+					<Add directory="/usr/lib/gcc/x86_64-pc-cygwin/7.4.0/include/c++/x86_64-pc-cygwin"/>
+					<Add directory="/usr/lib/gcc/x86_64-pc-cygwin/7.4.0/include/c++/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-pc-cygwin/7.4.0/include"/>
+					<Add directory="/usr/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-pc-cygwin/7.4.0/../../../../lib/../include/w32api"/>
 				</Compiler>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j4 -f &quot;/Users/vumilan/CLionProjects/PA2/semwork/simple_spreadsheet/cmake-build-debug/Makefile&quot;  VERBOSE=1 simple_spreadsheet"/>
-					<CompileFile command="/usr/bin/make -j4 -f &quot;/Users/vumilan/CLionProjects/PA2/semwork/simple_spreadsheet/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j4 -f &quot;/Users/vumilan/CLionProjects/PA2/semwork/simple_spreadsheet/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j4 -f &quot;/Users/vumilan/CLionProjects/PA2/semwork/simple_spreadsheet/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="C:/cygwin64/bin/make.exe -j8 -f &quot;/cygdrive/c/Users/Milan/CLionProjects/simple_spreadsheet/cmake-build-debug/Makefile&quot;  VERBOSE=1 simple_spreadsheet"/>
+					<CompileFile command="C:/cygwin64/bin/make.exe -j8 -f &quot;/cygdrive/c/Users/Milan/CLionProjects/simple_spreadsheet/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="C:/cygwin64/bin/make.exe -j8 -f &quot;/cygdrive/c/Users/Milan/CLionProjects/simple_spreadsheet/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="C:/cygwin64/bin/make.exe -j8 -f &quot;/cygdrive/c/Users/Milan/CLionProjects/simple_spreadsheet/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="simple_spreadsheet/fast">
-				<Option output="/Users/vumilan/CLionProjects/PA2/semwork/simple_spreadsheet/cmake-build-debug/simple_spreadsheet" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="/Users/vumilan/CLionProjects/PA2/semwork/simple_spreadsheet/cmake-build-debug"/>
+				<Option output="/cygdrive/c/Users/Milan/CLionProjects/simple_spreadsheet/cmake-build-debug/simple_spreadsheet.exe" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/cygdrive/c/Users/Milan/CLionProjects/simple_spreadsheet/cmake-build-debug"/>
 				<Option object_output="./"/>
 				<Option type="1"/>
 				<Option compiler="gcc"/>
 				<Compiler>
-					<Add directory="/Library/Developer/CommandLineTools/usr/include/c++/v1"/>
-					<Add directory="/usr/local/include"/>
-					<Add directory="/Library/Developer/CommandLineTools/usr/lib/clang/10.0.0/include"/>
-					<Add directory="/Library/Developer/CommandLineTools/usr/include"/>
-					<Add directory="/System/Library/Frameworks"/>
-					<Add directory="/Library/Frameworks"/>
+					<Add directory="/usr/lib/gcc/x86_64-pc-cygwin/7.4.0/include/c++"/>
+					<Add directory="/usr/lib/gcc/x86_64-pc-cygwin/7.4.0/include/c++/x86_64-pc-cygwin"/>
+					<Add directory="/usr/lib/gcc/x86_64-pc-cygwin/7.4.0/include/c++/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-pc-cygwin/7.4.0/include"/>
+					<Add directory="/usr/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-pc-cygwin/7.4.0/../../../../lib/../include/w32api"/>
 				</Compiler>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j4 -f &quot;/Users/vumilan/CLionProjects/PA2/semwork/simple_spreadsheet/cmake-build-debug/Makefile&quot;  VERBOSE=1 simple_spreadsheet/fast"/>
-					<CompileFile command="/usr/bin/make -j4 -f &quot;/Users/vumilan/CLionProjects/PA2/semwork/simple_spreadsheet/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j4 -f &quot;/Users/vumilan/CLionProjects/PA2/semwork/simple_spreadsheet/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j4 -f &quot;/Users/vumilan/CLionProjects/PA2/semwork/simple_spreadsheet/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="C:/cygwin64/bin/make.exe -j8 -f &quot;/cygdrive/c/Users/Milan/CLionProjects/simple_spreadsheet/cmake-build-debug/Makefile&quot;  VERBOSE=1 simple_spreadsheet/fast"/>
+					<CompileFile command="C:/cygwin64/bin/make.exe -j8 -f &quot;/cygdrive/c/Users/Milan/CLionProjects/simple_spreadsheet/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="C:/cygwin64/bin/make.exe -j8 -f &quot;/cygdrive/c/Users/Milan/CLionProjects/simple_spreadsheet/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="C:/cygwin64/bin/make.exe -j8 -f &quot;/cygdrive/c/Users/Milan/CLionProjects/simple_spreadsheet/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="edit_cache">
+				<Option working_dir="/cygdrive/c/Users/Milan/CLionProjects/simple_spreadsheet/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="C:/cygwin64/bin/make.exe -j8 -f &quot;/cygdrive/c/Users/Milan/CLionProjects/simple_spreadsheet/cmake-build-debug/Makefile&quot;  VERBOSE=1 edit_cache"/>
+					<CompileFile command="C:/cygwin64/bin/make.exe -j8 -f &quot;/cygdrive/c/Users/Milan/CLionProjects/simple_spreadsheet/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="C:/cygwin64/bin/make.exe -j8 -f &quot;/cygdrive/c/Users/Milan/CLionProjects/simple_spreadsheet/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="C:/cygwin64/bin/make.exe -j8 -f &quot;/cygdrive/c/Users/Milan/CLionProjects/simple_spreadsheet/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 		</Build>
-		<Unit filename="/Users/vumilan/CLionProjects/PA2/semwork/simple_spreadsheet/main.cpp">
+		<Unit filename="/cygdrive/c/Users/Milan/CLionProjects/simple_spreadsheet/Cell.cpp">
 			<Option target="simple_spreadsheet"/>
 		</Unit>
-		<Unit filename="/Users/vumilan/CLionProjects/PA2/semwork/simple_spreadsheet/CMakeLists.txt">
+		<Unit filename="/cygdrive/c/Users/Milan/CLionProjects/simple_spreadsheet/Cell.h">
+			<Option target="simple_spreadsheet"/>
+		</Unit>
+		<Unit filename="/cygdrive/c/Users/Milan/CLionProjects/simple_spreadsheet/Date.cpp">
+			<Option target="simple_spreadsheet"/>
+		</Unit>
+		<Unit filename="/cygdrive/c/Users/Milan/CLionProjects/simple_spreadsheet/Date.h">
+			<Option target="simple_spreadsheet"/>
+		</Unit>
+		<Unit filename="/cygdrive/c/Users/Milan/CLionProjects/simple_spreadsheet/DateCell.cpp">
+			<Option target="simple_spreadsheet"/>
+		</Unit>
+		<Unit filename="/cygdrive/c/Users/Milan/CLionProjects/simple_spreadsheet/DateCell.h">
+			<Option target="simple_spreadsheet"/>
+		</Unit>
+		<Unit filename="/cygdrive/c/Users/Milan/CLionProjects/simple_spreadsheet/FunctionCell.cpp">
+			<Option target="simple_spreadsheet"/>
+		</Unit>
+		<Unit filename="/cygdrive/c/Users/Milan/CLionProjects/simple_spreadsheet/FunctionCell.h">
+			<Option target="simple_spreadsheet"/>
+		</Unit>
+		<Unit filename="/cygdrive/c/Users/Milan/CLionProjects/simple_spreadsheet/NumberCell.cpp">
+			<Option target="simple_spreadsheet"/>
+		</Unit>
+		<Unit filename="/cygdrive/c/Users/Milan/CLionProjects/simple_spreadsheet/NumberCell.h">
+			<Option target="simple_spreadsheet"/>
+		</Unit>
+		<Unit filename="/cygdrive/c/Users/Milan/CLionProjects/simple_spreadsheet/Sheet.cpp">
+			<Option target="simple_spreadsheet"/>
+		</Unit>
+		<Unit filename="/cygdrive/c/Users/Milan/CLionProjects/simple_spreadsheet/Sheet.h">
+			<Option target="simple_spreadsheet"/>
+		</Unit>
+		<Unit filename="/cygdrive/c/Users/Milan/CLionProjects/simple_spreadsheet/TextCell.cpp">
+			<Option target="simple_spreadsheet"/>
+		</Unit>
+		<Unit filename="/cygdrive/c/Users/Milan/CLionProjects/simple_spreadsheet/TextCell.h">
+			<Option target="simple_spreadsheet"/>
+		</Unit>
+		<Unit filename="/cygdrive/c/Users/Milan/CLionProjects/simple_spreadsheet/main.cpp">
+			<Option target="simple_spreadsheet"/>
+		</Unit>
+		<Unit filename="/cygdrive/c/Users/Milan/CLionProjects/simple_spreadsheet/CMakeLists.txt">
 			<Option virtualFolder="CMake Files\"/>
 		</Unit>
 	</Project>

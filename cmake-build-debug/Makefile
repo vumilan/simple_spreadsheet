@@ -39,19 +39,19 @@ cmake_force:
 SHELL = /bin/sh
 
 # The CMake executable.
-CMAKE_COMMAND = /Applications/CLion.app/Contents/bin/cmake/mac/bin/cmake
+CMAKE_COMMAND = /cygdrive/c/Users/Milan/.CLion2019.1/system/cygwin_cmake/bin/cmake.exe
 
 # The command to remove a file.
-RM = /Applications/CLion.app/Contents/bin/cmake/mac/bin/cmake -E remove -f
+RM = /cygdrive/c/Users/Milan/.CLion2019.1/system/cygwin_cmake/bin/cmake.exe -E remove -f
 
 # Escaping for special characters.
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /Users/vumilan/CLionProjects/PA2/semwork/simple_spreadsheet
+CMAKE_SOURCE_DIR = /cygdrive/c/Users/Milan/CLionProjects/simple_spreadsheet
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /Users/vumilan/CLionProjects/PA2/semwork/simple_spreadsheet/cmake-build-debug
+CMAKE_BINARY_DIR = /cygdrive/c/Users/Milan/CLionProjects/simple_spreadsheet/cmake-build-debug
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -59,7 +59,7 @@ CMAKE_BINARY_DIR = /Users/vumilan/CLionProjects/PA2/semwork/simple_spreadsheet/c
 # Special rule for the target rebuild_cache
 rebuild_cache:
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running CMake to regenerate build system..."
-	/Applications/CLion.app/Contents/bin/cmake/mac/bin/cmake -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
+	/cygdrive/c/Users/Milan/.CLion2019.1/system/cygwin_cmake/bin/cmake.exe -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
 .PHONY : rebuild_cache
 
 # Special rule for the target rebuild_cache
@@ -70,7 +70,7 @@ rebuild_cache/fast: rebuild_cache
 # Special rule for the target edit_cache
 edit_cache:
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "No interactive CMake dialog available..."
-	/Applications/CLion.app/Contents/bin/cmake/mac/bin/cmake -E echo No\ interactive\ CMake\ dialog\ available.
+	/cygdrive/c/Users/Milan/.CLion2019.1/system/cygwin_cmake/bin/cmake.exe -E echo No\ interactive\ CMake\ dialog\ available.
 .PHONY : edit_cache
 
 # Special rule for the target edit_cache
@@ -80,9 +80,9 @@ edit_cache/fast: edit_cache
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/vumilan/CLionProjects/PA2/semwork/simple_spreadsheet/cmake-build-debug/CMakeFiles /Users/vumilan/CLionProjects/PA2/semwork/simple_spreadsheet/cmake-build-debug/CMakeFiles/progress.marks
+	$(CMAKE_COMMAND) -E cmake_progress_start /cygdrive/c/Users/Milan/CLionProjects/simple_spreadsheet/cmake-build-debug/CMakeFiles /cygdrive/c/Users/Milan/CLionProjects/simple_spreadsheet/cmake-build-debug/CMakeFiles/progress.marks
 	$(MAKE) -f CMakeFiles/Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/vumilan/CLionProjects/PA2/semwork/simple_spreadsheet/cmake-build-debug/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /cygdrive/c/Users/Milan/CLionProjects/simple_spreadsheet/cmake-build-debug/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
@@ -123,6 +123,195 @@ simple_spreadsheet/fast:
 	$(MAKE) -f CMakeFiles/simple_spreadsheet.dir/build.make CMakeFiles/simple_spreadsheet.dir/build
 .PHONY : simple_spreadsheet/fast
 
+Cell.o: Cell.cpp.o
+
+.PHONY : Cell.o
+
+# target to build an object file
+Cell.cpp.o:
+	$(MAKE) -f CMakeFiles/simple_spreadsheet.dir/build.make CMakeFiles/simple_spreadsheet.dir/Cell.cpp.o
+.PHONY : Cell.cpp.o
+
+Cell.i: Cell.cpp.i
+
+.PHONY : Cell.i
+
+# target to preprocess a source file
+Cell.cpp.i:
+	$(MAKE) -f CMakeFiles/simple_spreadsheet.dir/build.make CMakeFiles/simple_spreadsheet.dir/Cell.cpp.i
+.PHONY : Cell.cpp.i
+
+Cell.s: Cell.cpp.s
+
+.PHONY : Cell.s
+
+# target to generate assembly for a file
+Cell.cpp.s:
+	$(MAKE) -f CMakeFiles/simple_spreadsheet.dir/build.make CMakeFiles/simple_spreadsheet.dir/Cell.cpp.s
+.PHONY : Cell.cpp.s
+
+Date.o: Date.cpp.o
+
+.PHONY : Date.o
+
+# target to build an object file
+Date.cpp.o:
+	$(MAKE) -f CMakeFiles/simple_spreadsheet.dir/build.make CMakeFiles/simple_spreadsheet.dir/Date.cpp.o
+.PHONY : Date.cpp.o
+
+Date.i: Date.cpp.i
+
+.PHONY : Date.i
+
+# target to preprocess a source file
+Date.cpp.i:
+	$(MAKE) -f CMakeFiles/simple_spreadsheet.dir/build.make CMakeFiles/simple_spreadsheet.dir/Date.cpp.i
+.PHONY : Date.cpp.i
+
+Date.s: Date.cpp.s
+
+.PHONY : Date.s
+
+# target to generate assembly for a file
+Date.cpp.s:
+	$(MAKE) -f CMakeFiles/simple_spreadsheet.dir/build.make CMakeFiles/simple_spreadsheet.dir/Date.cpp.s
+.PHONY : Date.cpp.s
+
+DateCell.o: DateCell.cpp.o
+
+.PHONY : DateCell.o
+
+# target to build an object file
+DateCell.cpp.o:
+	$(MAKE) -f CMakeFiles/simple_spreadsheet.dir/build.make CMakeFiles/simple_spreadsheet.dir/DateCell.cpp.o
+.PHONY : DateCell.cpp.o
+
+DateCell.i: DateCell.cpp.i
+
+.PHONY : DateCell.i
+
+# target to preprocess a source file
+DateCell.cpp.i:
+	$(MAKE) -f CMakeFiles/simple_spreadsheet.dir/build.make CMakeFiles/simple_spreadsheet.dir/DateCell.cpp.i
+.PHONY : DateCell.cpp.i
+
+DateCell.s: DateCell.cpp.s
+
+.PHONY : DateCell.s
+
+# target to generate assembly for a file
+DateCell.cpp.s:
+	$(MAKE) -f CMakeFiles/simple_spreadsheet.dir/build.make CMakeFiles/simple_spreadsheet.dir/DateCell.cpp.s
+.PHONY : DateCell.cpp.s
+
+FunctionCell.o: FunctionCell.cpp.o
+
+.PHONY : FunctionCell.o
+
+# target to build an object file
+FunctionCell.cpp.o:
+	$(MAKE) -f CMakeFiles/simple_spreadsheet.dir/build.make CMakeFiles/simple_spreadsheet.dir/FunctionCell.cpp.o
+.PHONY : FunctionCell.cpp.o
+
+FunctionCell.i: FunctionCell.cpp.i
+
+.PHONY : FunctionCell.i
+
+# target to preprocess a source file
+FunctionCell.cpp.i:
+	$(MAKE) -f CMakeFiles/simple_spreadsheet.dir/build.make CMakeFiles/simple_spreadsheet.dir/FunctionCell.cpp.i
+.PHONY : FunctionCell.cpp.i
+
+FunctionCell.s: FunctionCell.cpp.s
+
+.PHONY : FunctionCell.s
+
+# target to generate assembly for a file
+FunctionCell.cpp.s:
+	$(MAKE) -f CMakeFiles/simple_spreadsheet.dir/build.make CMakeFiles/simple_spreadsheet.dir/FunctionCell.cpp.s
+.PHONY : FunctionCell.cpp.s
+
+NumberCell.o: NumberCell.cpp.o
+
+.PHONY : NumberCell.o
+
+# target to build an object file
+NumberCell.cpp.o:
+	$(MAKE) -f CMakeFiles/simple_spreadsheet.dir/build.make CMakeFiles/simple_spreadsheet.dir/NumberCell.cpp.o
+.PHONY : NumberCell.cpp.o
+
+NumberCell.i: NumberCell.cpp.i
+
+.PHONY : NumberCell.i
+
+# target to preprocess a source file
+NumberCell.cpp.i:
+	$(MAKE) -f CMakeFiles/simple_spreadsheet.dir/build.make CMakeFiles/simple_spreadsheet.dir/NumberCell.cpp.i
+.PHONY : NumberCell.cpp.i
+
+NumberCell.s: NumberCell.cpp.s
+
+.PHONY : NumberCell.s
+
+# target to generate assembly for a file
+NumberCell.cpp.s:
+	$(MAKE) -f CMakeFiles/simple_spreadsheet.dir/build.make CMakeFiles/simple_spreadsheet.dir/NumberCell.cpp.s
+.PHONY : NumberCell.cpp.s
+
+Sheet.o: Sheet.cpp.o
+
+.PHONY : Sheet.o
+
+# target to build an object file
+Sheet.cpp.o:
+	$(MAKE) -f CMakeFiles/simple_spreadsheet.dir/build.make CMakeFiles/simple_spreadsheet.dir/Sheet.cpp.o
+.PHONY : Sheet.cpp.o
+
+Sheet.i: Sheet.cpp.i
+
+.PHONY : Sheet.i
+
+# target to preprocess a source file
+Sheet.cpp.i:
+	$(MAKE) -f CMakeFiles/simple_spreadsheet.dir/build.make CMakeFiles/simple_spreadsheet.dir/Sheet.cpp.i
+.PHONY : Sheet.cpp.i
+
+Sheet.s: Sheet.cpp.s
+
+.PHONY : Sheet.s
+
+# target to generate assembly for a file
+Sheet.cpp.s:
+	$(MAKE) -f CMakeFiles/simple_spreadsheet.dir/build.make CMakeFiles/simple_spreadsheet.dir/Sheet.cpp.s
+.PHONY : Sheet.cpp.s
+
+TextCell.o: TextCell.cpp.o
+
+.PHONY : TextCell.o
+
+# target to build an object file
+TextCell.cpp.o:
+	$(MAKE) -f CMakeFiles/simple_spreadsheet.dir/build.make CMakeFiles/simple_spreadsheet.dir/TextCell.cpp.o
+.PHONY : TextCell.cpp.o
+
+TextCell.i: TextCell.cpp.i
+
+.PHONY : TextCell.i
+
+# target to preprocess a source file
+TextCell.cpp.i:
+	$(MAKE) -f CMakeFiles/simple_spreadsheet.dir/build.make CMakeFiles/simple_spreadsheet.dir/TextCell.cpp.i
+.PHONY : TextCell.cpp.i
+
+TextCell.s: TextCell.cpp.s
+
+.PHONY : TextCell.s
+
+# target to generate assembly for a file
+TextCell.cpp.s:
+	$(MAKE) -f CMakeFiles/simple_spreadsheet.dir/build.make CMakeFiles/simple_spreadsheet.dir/TextCell.cpp.s
+.PHONY : TextCell.cpp.s
+
 main.o: main.cpp.o
 
 .PHONY : main.o
@@ -157,8 +346,29 @@ help:
 	@echo "... clean"
 	@echo "... depend"
 	@echo "... rebuild_cache"
-	@echo "... edit_cache"
 	@echo "... simple_spreadsheet"
+	@echo "... edit_cache"
+	@echo "... Cell.o"
+	@echo "... Cell.i"
+	@echo "... Cell.s"
+	@echo "... Date.o"
+	@echo "... Date.i"
+	@echo "... Date.s"
+	@echo "... DateCell.o"
+	@echo "... DateCell.i"
+	@echo "... DateCell.s"
+	@echo "... FunctionCell.o"
+	@echo "... FunctionCell.i"
+	@echo "... FunctionCell.s"
+	@echo "... NumberCell.o"
+	@echo "... NumberCell.i"
+	@echo "... NumberCell.s"
+	@echo "... Sheet.o"
+	@echo "... Sheet.i"
+	@echo "... Sheet.s"
+	@echo "... TextCell.o"
+	@echo "... TextCell.i"
+	@echo "... TextCell.s"
 	@echo "... main.o"
 	@echo "... main.i"
 	@echo "... main.s"
