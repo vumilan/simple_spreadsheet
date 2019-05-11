@@ -1,0 +1,32 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/Users/vumilan/CLionProjects/PA2/semwork/simple_spreadsheet/main.cpp
+iostream
+-
+cstring
+-
+cstdlib
+-
+memory
+-
+set
+-
+map
+-
+vector
+-
+sstream
+-
+string
+-
+fstream
+-
+ncurses.h
+-
+
