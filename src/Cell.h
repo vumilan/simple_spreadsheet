@@ -6,6 +6,7 @@
 #define SIMPLE_SPREADSHEET_CELL_H
 
 #include <memory>
+#include <iostream>
 
 /// virtual class Cell
 class Cell {
@@ -25,9 +26,9 @@ public:
 //    /// function to load cell value from save format
 //    void loadFromSF();
 //
-//    virtual std::ostream &print(std::ostream &os) const = 0;
-//
-//    friend std::ostream &operator<<(std::ostream &os, const Cell &cell);
+    virtual std::ostream &print(std::ostream &os) const = 0;
+
+    friend std::ostream &operator<<(std::ostream &os, const Cell &cell);
 
 };
 

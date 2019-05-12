@@ -17,9 +17,9 @@ public:
 
 //    void convertToSF() const override;
 //
-//    std::ostream &print(std::ostream &os) const override;
+    std::ostream &print(std::ostream &os) const override;
 
-protected:
+private:
     Date date;
 };
 

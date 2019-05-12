@@ -1,15 +1,8 @@
 #include <iostream>
-#include <cstring>
-#include <cstdlib>
-#include <memory>
-#include <set>
-#include <map>
-#include <vector>
-#include <sstream>
-#include <string>
-#include <fstream>
-#include "Cell.h"
-#include "Sheet.h"
+#include "src/Sheet.h"
+#include "src/NumberCell.h"
+#include "src/TextCell.h"
+#include "src/DateCell.h"
 
 using namespace std;
 
@@ -17,8 +10,9 @@ int main() {
     cout << "This is my spreadsheet implementation." << endl;
     Sheet a;
     a.loadSheet("spreadsheet01.csv");
+    a.put(3, 3, NumberCell(10)).put(11, 1, TextCell("hello")).put(10, 20, DateCell(Date(1, 1, 2019)));
     // print the loaded spreadsheet from the file
-    a.printSheet(10, 10);
+    a.printSheet(10, 10, 10, 10);
 
 //    b.put(CNumber("A1", 12)).put(CString("B1", "hello"));
 //    b.printSheet(1, 2);

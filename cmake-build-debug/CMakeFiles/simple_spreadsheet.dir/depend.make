@@ -29,6 +29,10 @@ CMakeFiles/simple_spreadsheet.dir/TextCell.cpp.o: ../TextCell.cpp
 CMakeFiles/simple_spreadsheet.dir/TextCell.cpp.o: ../TextCell.h
 
 CMakeFiles/simple_spreadsheet.dir/main.cpp.o: ../Cell.h
+CMakeFiles/simple_spreadsheet.dir/main.cpp.o: ../Date.h
+CMakeFiles/simple_spreadsheet.dir/main.cpp.o: ../DateCell.h
+CMakeFiles/simple_spreadsheet.dir/main.cpp.o: ../NumberCell.h
 CMakeFiles/simple_spreadsheet.dir/main.cpp.o: ../Sheet.h
+CMakeFiles/simple_spreadsheet.dir/main.cpp.o: ../TextCell.h
 CMakeFiles/simple_spreadsheet.dir/main.cpp.o: ../main.cpp
 

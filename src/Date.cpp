@@ -15,3 +15,7 @@ int Date::getMonth() const {
 int Date::getDay() const {
     return day;
 }
+
+std::ostream &Date::print(std::ostream &os) const {
+    return os << day << "." << month << "." << year;
+}

@@ -1,3 +1,3 @@
-/cygdrive/c/Users/Milan/CLionProjects/simple_spreadsheet/cmake-build-debug/CMakeFiles/rebuild_cache.dir
-/cygdrive/c/Users/Milan/CLionProjects/simple_spreadsheet/cmake-build-debug/CMakeFiles/simple_spreadsheet.dir
-/cygdrive/c/Users/Milan/CLionProjects/simple_spreadsheet/cmake-build-debug/CMakeFiles/edit_cache.dir
+/Users/vumilan/CLionProjects/PA2/semwork/simple_spreadsheet/cmake-build-debug/CMakeFiles/rebuild_cache.dir
+/Users/vumilan/CLionProjects/PA2/semwork/simple_spreadsheet/cmake-build-debug/CMakeFiles/edit_cache.dir
+/Users/vumilan/CLionProjects/PA2/semwork/simple_spreadsheet/cmake-build-debug/CMakeFiles/simple_spreadsheet.dir

@@ -6,11 +6,25 @@
 
 #IncludeRegexTransform: 
 
-/cygdrive/c/Users/Milan/CLionProjects/simple_spreadsheet/Cell.cpp
-Cell.h
-/cygdrive/c/Users/Milan/CLionProjects/simple_spreadsheet/Cell.h
-
-/cygdrive/c/Users/Milan/CLionProjects/simple_spreadsheet/Cell.h
+/Users/vumilan/CLionProjects/PA2/semwork/simple_spreadsheet/Cell.h
 memory
+-
+iostream
+-
+
+/Users/vumilan/CLionProjects/PA2/semwork/simple_spreadsheet/Sheet.cpp
+Sheet.h
+/Users/vumilan/CLionProjects/PA2/semwork/simple_spreadsheet/Sheet.h
+
+/Users/vumilan/CLionProjects/PA2/semwork/simple_spreadsheet/Sheet.h
+Cell.h
+/Users/vumilan/CLionProjects/PA2/semwork/simple_spreadsheet/Cell.h
+memory
+/Users/vumilan/CLionProjects/PA2/semwork/simple_spreadsheet/memory
+iostream
+-
+string
+-
+map
 -
 

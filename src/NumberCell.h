@@ -7,19 +7,20 @@
 
 #include "Cell.h"
 #include <memory>
+#include <string>
 
 class NumberCell : public Cell {
 public:
-    NumberCell(double number) { m_Number = number; }
+    NumberCell(int number) : number(number) {}
 
     std::shared_ptr<Cell> clone() const override;
 
 //    void convertToSF() const override;
 //
-//    std::ostream &print(std::ostream &os) const override;
+    std::ostream &print(std::ostream &os) const override;
 
 private:
-    double m_Number;
+    int number;
 };
 
 

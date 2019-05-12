@@ -6,9 +6,11 @@
 #define SIMPLE_SPREADSHEET_FUNCTIONCELL_H
 
 
-#include "Cell.h"
+#include "src/Cell.h"
 #include <memory>
 #include <string>
+#include <iomanip>
+#include <map>
 
 class FunctionCell : public Cell {
 public:
@@ -17,10 +19,10 @@ public:
     std::shared_ptr<Cell> clone() const override;
 
 //    void convertToSF() const override;
-//
-//    std::ostream &print(std::ostream &os) const override;
 
-protected:
+    std::ostream &print(std::ostream &os) const override;
+
+private:
     double value;
 };
 
