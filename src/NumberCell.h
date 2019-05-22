@@ -11,16 +11,16 @@
 
 class NumberCell : public Cell {
 public:
-    NumberCell(int number) : number(number) {}
+    NumberCell(const std::string &cellValue, double number);
 
     std::shared_ptr<Cell> clone() const override;
 
-//    void convertToSF() const override;
-//
+    std::string convertToSF() const override;
+
     std::ostream &print(std::ostream &os) const override;
 
 private:
-    int number;
+    double number;
 };
 
 

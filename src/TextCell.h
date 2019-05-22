@@ -8,16 +8,17 @@
 #include "string"
 #include "Cell.h"
 #include <memory>
+#include <string>
 
 
 class TextCell : public Cell {
 public:
-    TextCell(const std::string &value) { text = value; }
+    TextCell(const std::string &cellValue, const std::string &value);
 
     std::shared_ptr<Cell> clone() const override;
 
-//    void convertToSF() const override;
-//
+    std::string convertToSF() const override;
+
     std::ostream &print(std::ostream &os) const override;
 
 protected:

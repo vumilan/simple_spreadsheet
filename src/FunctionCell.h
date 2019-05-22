@@ -6,24 +6,29 @@
 #define SIMPLE_SPREADSHEET_FUNCTIONCELL_H
 
 
-#include "src/Cell.h"
+#include "Cell.h"
 #include <memory>
 #include <string>
 #include <iomanip>
 #include <map>
+#include <string>
+#include <vector>
 
 class FunctionCell : public Cell {
 public:
-    FunctionCell(const std::string &function, double number) : value(number) {}
+    FunctionCell(const std::string &cellValue, const std::string &function, size_t number);
 
     std::shared_ptr<Cell> clone() const override;
 
-//    void convertToSF() const override;
+    std::string convertToSF() const override;
 
     std::ostream &print(std::ostream &os) const override;
 
 private:
-    double value;
+    std::map<std::string, size_t> functionStrings = { {"sin", 0}, {"cos", 1}, {"concat", 2}, {"abs", 3} };
+    size_t number;
+    std::vector<std::string> texts;
+    size_t function;
 };
 
 

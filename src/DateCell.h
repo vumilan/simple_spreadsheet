@@ -8,15 +8,16 @@
 #include "Date.h"
 #include "Cell.h"
 #include <memory>
+#include <string>
 
 class DateCell : public Cell {
 public:
-    DateCell(const Date &date) : date(date) {}
+    DateCell(const std::string &cellValue, const Date &date);
 
     std::shared_ptr<Cell> clone() const override;
 
-//    void convertToSF() const override;
-//
+    std::string convertToSF() const override;
+
     std::ostream &print(std::ostream &os) const override;
 
 private:

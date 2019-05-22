@@ -6,18 +6,29 @@
 #define SIMPLE_SPREADSHEET_SHEET_H
 
 #include "Cell.h"
+#include "TextCell.h"
 #include "memory"
 #include <iostream>
 #include <string>
 #include <map>
+#include "Exp.h"
+#include "ExpTerm.h"
+#include "ExpNode.h"
 
 class Sheet {
 public:
-    Sheet() = default;
+    Sheet(const std::string &name);
 
     ~Sheet() = default;
 
-    Sheet &put(size_t x, size_t y, const Cell &cell);
+    void addCell(std::pair<size_t, size_t> coordinates, const Cell &cell);
+
+    void put(size_t x, size_t y, const std::string &value);
+
+    //
+    std::shared_ptr<Exp> parseExpr(const std::string &str);
+
+//    Cell &cell(size_t x, size_t y);
 
     void printSheet(size_t x, size_t y, size_t width, size_t height);
 
@@ -31,17 +42,13 @@ public:
     }
 
 private:
-    struct cellsRowCompare {
-        bool operator()(std::pair<size_t, size_t> a, std::pair<size_t, size_t> b) const;
-    };
+    std::string name;
 
-    struct cellsColumnCompare {
-        bool operator()(std::pair<size_t, size_t> a, std::pair<size_t, size_t> b) const;
-    };
+    size_t maxRow;
 
-    /// using two maps, each sorted by either row or column for better runtime
-    std::map<std::pair<size_t, size_t>, std::shared_ptr<Cell>, cellsRowCompare> cellsByRow;
-    std::map<std::pair<size_t, size_t>, std::shared_ptr<Cell>, cellsColumnCompare> cellsByColumn;
+    size_t maxColumn;
+
+    std::map<std::pair<size_t, size_t>, std::shared_ptr<Cell>> cells;
 };
 
 

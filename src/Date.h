@@ -10,18 +10,18 @@
 
 class Date {
 public:
-    Date(int day, int month, int year) : year(year), month(month), day(day) {}
+    Date(size_t day, size_t month, size_t year) : year(year), month(month), day(day) {}
 
-    int getYear() const;
+    size_t getYear() const;
 
-    int getMonth() const;
+    size_t getMonth() const;
 
-    int getDay() const;
+    size_t getDay() const;
 
     std::ostream &print(std::ostream &os) const;
 
 private:
-    int year, month, day;
+    size_t year, month, day;
 };
 
 
