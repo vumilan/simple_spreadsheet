@@ -6,26 +6,43 @@
 #define SIMPLE_SPREADSHEET_EXPNODE_H
 
 #include "Exp.h"
+#include "exceptions/DivisionByZeroException.h"
 #include <iostream>
+#include <memory>
 
 class ExpNode : public Exp {
 public:
-    ExpNode(char op, std::shared_ptr<Exp> left, std::shared_ptr<Exp> right) : op(op), l_exp(left), r_exp(right) {}
+    ExpNode(char op, std::shared_ptr<Exp> left, std::shared_ptr<Exp> right)
+        : op(op), leftExpr(std::move(left)), rightExpr(std::move(right)) {}
 
-    void print() const {
+    void print() const override {
         std::cout << '(' << op << ' ';
-        l_exp->print();
-        r_exp->print();
+        leftExpr->print();
+        rightExpr->print();
         std::cout << ')';
     }
 
-    std::shared_ptr<Exp> clone() const {
+    std::shared_ptr<Exp> clone() const override {
         return std::make_shared<ExpNode>(ExpNode(*this));
     }
 
+    double evaluate() const override {
+        if (op == '+')
+            return leftExpr->evaluate() + rightExpr->evaluate();
+        else if (op == '-')
+            return leftExpr->evaluate() - rightExpr->evaluate();
+        else if (op == '*')
+            return leftExpr->evaluate() * rightExpr->evaluate();
+        // op == '/' here
+        double rightNumber = rightExpr->evaluate();
+        if (rightNumber == 0)
+            throw DivisionByZeroException();
+        return leftExpr->evaluate() / rightExpr->evaluate();
+    }
+
 private:
-    std::shared_ptr<Exp> l_exp;
-    std::shared_ptr<Exp> r_exp;
+    std::shared_ptr<Exp> leftExpr;
+    std::shared_ptr<Exp> rightExpr;
     char op; // +, -, *, /
 };
 

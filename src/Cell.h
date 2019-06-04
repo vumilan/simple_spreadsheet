@@ -15,7 +15,7 @@
 class Cell {
 public:
 
-    Cell(const std::string &value);
+    explicit Cell(std::string formula);
 
     virtual ~Cell() = default;
 
@@ -31,15 +31,41 @@ public:
 
     virtual std::ostream &print(std::ostream &os) const = 0;
 
-    friend std::ostream &operator<<(std::ostream &os, const Cell &cell);
-protected:
-    std::string value;
-    /// cellsTo is a set of pointers to refresh value of the cells referencing from this cell
-    std::set<std::shared_ptr<Cell>> cellsTo;
-    /// cellsFrom is a set of pointers to get values of the cells referenced by this cell
-    std::set<std::shared_ptr<Cell>> cellsFrom;
+    virtual const std::string &value() const {
+        return formulaValue;
+    }
 
-    std::shared_ptr<Exp> expressionTree;
+    virtual void setExpTree(std::shared_ptr<Exp> &expTree) {
+    }
+
+    virtual bool hasError() const {
+        return false;
+    }
+
+    friend std::ostream &operator<<(std::ostream &os, const Cell &cell);
+
+    const std::string &formula() const {
+        return formulaValue;
+    }
+
+    void replaceFromRelations(std::shared_ptr<Cell> &thisPtr, std::shared_ptr<Cell> &newPtr);
+
+    bool updateCellRelations(std::shared_ptr<Cell> &ancestorCell, std::shared_ptr<Cell> &thisCell);
+
+    const std::set<std::shared_ptr<Cell>> &getDescendantCells() const;
+
+    void setDescendantCells(const std::set<std::shared_ptr<Cell>> &newDescendantCells);
+
+    const std::set<std::shared_ptr<Cell>> &getAncestorCells() const;
+
+    void setAncestorCells(const std::set<std::shared_ptr<Cell>> &newAncestorCells);
+
+protected:
+    std::string formulaValue;
+    /// descendantCells is a set of pointers to cells that are referenced by this cell
+    std::set<std::shared_ptr<Cell>> descendantCells;
+    /// ancestorCells is a set of pointers to cells that referenced this cell
+    std::set<std::shared_ptr<Cell>> ancestorCells;
 };
 
 #endif //SIMPLE_SPREADSHEET_CELL_H

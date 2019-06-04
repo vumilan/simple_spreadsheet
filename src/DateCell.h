@@ -12,7 +12,7 @@
 
 class DateCell : public Cell {
 public:
-    DateCell(const std::string &cellValue, const Date &date);
+    DateCell(const std::string &formula, const Date &date);
 
     std::shared_ptr<Cell> clone() const override;
 

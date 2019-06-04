@@ -10,7 +10,7 @@
  * @param cellValue
  * @param date
  */
-DateCell::DateCell(const std::string &cellValue, const Date &date) : Cell(cellValue), date(date) {}
+DateCell::DateCell(const std::string &formula, const Date &date) : Cell(formula), date(date) {}
 
 /**
  * Clones child object, returns a smart pointer of type parent to store in one container

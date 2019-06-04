@@ -9,11 +9,12 @@
 #include "Cell.h"
 #include <memory>
 #include <string>
+#include <iostream>
 
 
 class TextCell : public Cell {
 public:
-    TextCell(const std::string &cellValue, const std::string &value);
+    TextCell(std::string formula, std::string value);
 
     std::shared_ptr<Cell> clone() const override;
 
@@ -21,8 +22,12 @@ public:
 
     std::ostream &print(std::ostream &os) const override;
 
-protected:
-    std::string text;
+    const std::string &value() const override {
+        return stringValue;
+    }
+
+private:
+    std::string stringValue;
 };
 
 #endif //SIMPLE_SPREADSHEET_TEXTCELL_H

@@ -4,14 +4,15 @@
 
 #include "TextCell.h"
 
-TextCell::TextCell(const std::string &cellValue, const std::string &value) : Cell(cellValue) { text = value; }
+TextCell::TextCell(std::string formula, std::string value)
+    : Cell(std::move(formula)), stringValue(std::move(value)) {}
 
 std::shared_ptr<Cell> TextCell::clone() const {
     return std::make_shared<TextCell>(TextCell(*this));
 }
 
 std::ostream &TextCell::print(std::ostream &os) const {
-    os << text;
+    os << stringValue;
     return os;
 }
 

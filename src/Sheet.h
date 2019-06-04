@@ -14,21 +14,29 @@
 #include "Exp.h"
 #include "ExpTerm.h"
 #include "ExpNode.h"
+#include "FormulaCell.h"
 
 class Sheet {
 public:
-    Sheet(const std::string &name);
+    explicit Sheet(std::string name);
 
     ~Sheet() = default;
 
-    void addCell(std::pair<size_t, size_t> coordinates, const Cell &cell);
+    std::shared_ptr<Cell> addCell(std::pair<size_t, size_t> coordinates, std::shared_ptr<Cell> &ptrToCell);
 
     void put(size_t x, size_t y, const std::string &value);
 
-    //
-    std::shared_ptr<Exp> parseExpr(const std::string &str);
+    void updateCellRelations(std::pair<size_t, size_t> coordinates, std::shared_ptr<Cell> &ptrToCell);
 
-//    Cell &cell(size_t x, size_t y);
+    std::shared_ptr<Exp> parseExpr(std::shared_ptr<Cell> &parentCell, const std::string &str);
+
+    static std::string removeWhiteSpaces(const std::string &value);
+
+    static bool isACellCoordinate(const std::string &str);
+
+    static bool isAFunction(const std::string &str);
+
+    static std::pair<size_t, size_t> convertToCellCoordinate(const std::string &str);
 
     void printSheet(size_t x, size_t y, size_t width, size_t height);
 

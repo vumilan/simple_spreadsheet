@@ -231,6 +231,114 @@ src/DateCell.cpp.s:
 	$(MAKE) -f CMakeFiles/simple_spreadsheet.dir/build.make CMakeFiles/simple_spreadsheet.dir/src/DateCell.cpp.s
 .PHONY : src/DateCell.cpp.s
 
+src/Exp.o: src/Exp.cpp.o
+
+.PHONY : src/Exp.o
+
+# target to build an object file
+src/Exp.cpp.o:
+	$(MAKE) -f CMakeFiles/simple_spreadsheet.dir/build.make CMakeFiles/simple_spreadsheet.dir/src/Exp.cpp.o
+.PHONY : src/Exp.cpp.o
+
+src/Exp.i: src/Exp.cpp.i
+
+.PHONY : src/Exp.i
+
+# target to preprocess a source file
+src/Exp.cpp.i:
+	$(MAKE) -f CMakeFiles/simple_spreadsheet.dir/build.make CMakeFiles/simple_spreadsheet.dir/src/Exp.cpp.i
+.PHONY : src/Exp.cpp.i
+
+src/Exp.s: src/Exp.cpp.s
+
+.PHONY : src/Exp.s
+
+# target to generate assembly for a file
+src/Exp.cpp.s:
+	$(MAKE) -f CMakeFiles/simple_spreadsheet.dir/build.make CMakeFiles/simple_spreadsheet.dir/src/Exp.cpp.s
+.PHONY : src/Exp.cpp.s
+
+src/ExpNode.o: src/ExpNode.cpp.o
+
+.PHONY : src/ExpNode.o
+
+# target to build an object file
+src/ExpNode.cpp.o:
+	$(MAKE) -f CMakeFiles/simple_spreadsheet.dir/build.make CMakeFiles/simple_spreadsheet.dir/src/ExpNode.cpp.o
+.PHONY : src/ExpNode.cpp.o
+
+src/ExpNode.i: src/ExpNode.cpp.i
+
+.PHONY : src/ExpNode.i
+
+# target to preprocess a source file
+src/ExpNode.cpp.i:
+	$(MAKE) -f CMakeFiles/simple_spreadsheet.dir/build.make CMakeFiles/simple_spreadsheet.dir/src/ExpNode.cpp.i
+.PHONY : src/ExpNode.cpp.i
+
+src/ExpNode.s: src/ExpNode.cpp.s
+
+.PHONY : src/ExpNode.s
+
+# target to generate assembly for a file
+src/ExpNode.cpp.s:
+	$(MAKE) -f CMakeFiles/simple_spreadsheet.dir/build.make CMakeFiles/simple_spreadsheet.dir/src/ExpNode.cpp.s
+.PHONY : src/ExpNode.cpp.s
+
+src/ExpTerm.o: src/ExpTerm.cpp.o
+
+.PHONY : src/ExpTerm.o
+
+# target to build an object file
+src/ExpTerm.cpp.o:
+	$(MAKE) -f CMakeFiles/simple_spreadsheet.dir/build.make CMakeFiles/simple_spreadsheet.dir/src/ExpTerm.cpp.o
+.PHONY : src/ExpTerm.cpp.o
+
+src/ExpTerm.i: src/ExpTerm.cpp.i
+
+.PHONY : src/ExpTerm.i
+
+# target to preprocess a source file
+src/ExpTerm.cpp.i:
+	$(MAKE) -f CMakeFiles/simple_spreadsheet.dir/build.make CMakeFiles/simple_spreadsheet.dir/src/ExpTerm.cpp.i
+.PHONY : src/ExpTerm.cpp.i
+
+src/ExpTerm.s: src/ExpTerm.cpp.s
+
+.PHONY : src/ExpTerm.s
+
+# target to generate assembly for a file
+src/ExpTerm.cpp.s:
+	$(MAKE) -f CMakeFiles/simple_spreadsheet.dir/build.make CMakeFiles/simple_spreadsheet.dir/src/ExpTerm.cpp.s
+.PHONY : src/ExpTerm.cpp.s
+
+src/FormulaCell.o: src/FormulaCell.cpp.o
+
+.PHONY : src/FormulaCell.o
+
+# target to build an object file
+src/FormulaCell.cpp.o:
+	$(MAKE) -f CMakeFiles/simple_spreadsheet.dir/build.make CMakeFiles/simple_spreadsheet.dir/src/FormulaCell.cpp.o
+.PHONY : src/FormulaCell.cpp.o
+
+src/FormulaCell.i: src/FormulaCell.cpp.i
+
+.PHONY : src/FormulaCell.i
+
+# target to preprocess a source file
+src/FormulaCell.cpp.i:
+	$(MAKE) -f CMakeFiles/simple_spreadsheet.dir/build.make CMakeFiles/simple_spreadsheet.dir/src/FormulaCell.cpp.i
+.PHONY : src/FormulaCell.cpp.i
+
+src/FormulaCell.s: src/FormulaCell.cpp.s
+
+.PHONY : src/FormulaCell.s
+
+# target to generate assembly for a file
+src/FormulaCell.cpp.s:
+	$(MAKE) -f CMakeFiles/simple_spreadsheet.dir/build.make CMakeFiles/simple_spreadsheet.dir/src/FormulaCell.cpp.s
+.PHONY : src/FormulaCell.cpp.s
+
 src/FunctionCell.o: src/FunctionCell.cpp.o
 
 .PHONY : src/FunctionCell.o
@@ -257,33 +365,6 @@ src/FunctionCell.s: src/FunctionCell.cpp.s
 src/FunctionCell.cpp.s:
 	$(MAKE) -f CMakeFiles/simple_spreadsheet.dir/build.make CMakeFiles/simple_spreadsheet.dir/src/FunctionCell.cpp.s
 .PHONY : src/FunctionCell.cpp.s
-
-src/NumberCell.o: src/NumberCell.cpp.o
-
-.PHONY : src/NumberCell.o
-
-# target to build an object file
-src/NumberCell.cpp.o:
-	$(MAKE) -f CMakeFiles/simple_spreadsheet.dir/build.make CMakeFiles/simple_spreadsheet.dir/src/NumberCell.cpp.o
-.PHONY : src/NumberCell.cpp.o
-
-src/NumberCell.i: src/NumberCell.cpp.i
-
-.PHONY : src/NumberCell.i
-
-# target to preprocess a source file
-src/NumberCell.cpp.i:
-	$(MAKE) -f CMakeFiles/simple_spreadsheet.dir/build.make CMakeFiles/simple_spreadsheet.dir/src/NumberCell.cpp.i
-.PHONY : src/NumberCell.cpp.i
-
-src/NumberCell.s: src/NumberCell.cpp.s
-
-.PHONY : src/NumberCell.s
-
-# target to generate assembly for a file
-src/NumberCell.cpp.s:
-	$(MAKE) -f CMakeFiles/simple_spreadsheet.dir/build.make CMakeFiles/simple_spreadsheet.dir/src/NumberCell.cpp.s
-.PHONY : src/NumberCell.cpp.s
 
 src/Sheet.o: src/Sheet.cpp.o
 
@@ -360,12 +441,21 @@ help:
 	@echo "... src/DateCell.o"
 	@echo "... src/DateCell.i"
 	@echo "... src/DateCell.s"
+	@echo "... src/Exp.o"
+	@echo "... src/Exp.i"
+	@echo "... src/Exp.s"
+	@echo "... src/ExpNode.o"
+	@echo "... src/ExpNode.i"
+	@echo "... src/ExpNode.s"
+	@echo "... src/ExpTerm.o"
+	@echo "... src/ExpTerm.i"
+	@echo "... src/ExpTerm.s"
+	@echo "... src/FormulaCell.o"
+	@echo "... src/FormulaCell.i"
+	@echo "... src/FormulaCell.s"
 	@echo "... src/FunctionCell.o"
 	@echo "... src/FunctionCell.i"
 	@echo "... src/FunctionCell.s"
-	@echo "... src/NumberCell.o"
-	@echo "... src/NumberCell.i"
-	@echo "... src/NumberCell.s"
 	@echo "... src/Sheet.o"
 	@echo "... src/Sheet.i"
 	@echo "... src/Sheet.s"

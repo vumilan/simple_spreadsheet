@@ -101,16 +101,34 @@
 		<Unit filename="/Users/vumilan/CLionProjects/PA2/semwork/simple_spreadsheet/src/DateCell.h">
 			<Option target="simple_spreadsheet"/>
 		</Unit>
+		<Unit filename="/Users/vumilan/CLionProjects/PA2/semwork/simple_spreadsheet/src/Exp.cpp">
+			<Option target="simple_spreadsheet"/>
+		</Unit>
+		<Unit filename="/Users/vumilan/CLionProjects/PA2/semwork/simple_spreadsheet/src/Exp.h">
+			<Option target="simple_spreadsheet"/>
+		</Unit>
+		<Unit filename="/Users/vumilan/CLionProjects/PA2/semwork/simple_spreadsheet/src/ExpNode.cpp">
+			<Option target="simple_spreadsheet"/>
+		</Unit>
+		<Unit filename="/Users/vumilan/CLionProjects/PA2/semwork/simple_spreadsheet/src/ExpNode.h">
+			<Option target="simple_spreadsheet"/>
+		</Unit>
+		<Unit filename="/Users/vumilan/CLionProjects/PA2/semwork/simple_spreadsheet/src/ExpTerm.cpp">
+			<Option target="simple_spreadsheet"/>
+		</Unit>
+		<Unit filename="/Users/vumilan/CLionProjects/PA2/semwork/simple_spreadsheet/src/ExpTerm.h">
+			<Option target="simple_spreadsheet"/>
+		</Unit>
+		<Unit filename="/Users/vumilan/CLionProjects/PA2/semwork/simple_spreadsheet/src/FormulaCell.cpp">
+			<Option target="simple_spreadsheet"/>
+		</Unit>
+		<Unit filename="/Users/vumilan/CLionProjects/PA2/semwork/simple_spreadsheet/src/FormulaCell.h">
+			<Option target="simple_spreadsheet"/>
+		</Unit>
 		<Unit filename="/Users/vumilan/CLionProjects/PA2/semwork/simple_spreadsheet/src/FunctionCell.cpp">
 			<Option target="simple_spreadsheet"/>
 		</Unit>
 		<Unit filename="/Users/vumilan/CLionProjects/PA2/semwork/simple_spreadsheet/src/FunctionCell.h">
-			<Option target="simple_spreadsheet"/>
-		</Unit>
-		<Unit filename="/Users/vumilan/CLionProjects/PA2/semwork/simple_spreadsheet/src/NumberCell.cpp">
-			<Option target="simple_spreadsheet"/>
-		</Unit>
-		<Unit filename="/Users/vumilan/CLionProjects/PA2/semwork/simple_spreadsheet/src/NumberCell.h">
 			<Option target="simple_spreadsheet"/>
 		</Unit>
 		<Unit filename="/Users/vumilan/CLionProjects/PA2/semwork/simple_spreadsheet/src/Sheet.cpp">
