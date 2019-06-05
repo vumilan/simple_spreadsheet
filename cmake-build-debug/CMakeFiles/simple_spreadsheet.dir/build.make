@@ -122,22 +122,9 @@ CMakeFiles/simple_spreadsheet.dir/src/DateCell.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/simple_spreadsheet.dir/src/DateCell.cpp.s"
 	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/vumilan/CLionProjects/PA2/semwork/simple_spreadsheet/src/DateCell.cpp -o CMakeFiles/simple_spreadsheet.dir/src/DateCell.cpp.s
 
-CMakeFiles/simple_spreadsheet.dir/src/FunctionCell.cpp.o: CMakeFiles/simple_spreadsheet.dir/flags.make
-CMakeFiles/simple_spreadsheet.dir/src/FunctionCell.cpp.o: ../src/FunctionCell.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/vumilan/CLionProjects/PA2/semwork/simple_spreadsheet/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/simple_spreadsheet.dir/src/FunctionCell.cpp.o"
-	/Library/Developer/CommandLineTools/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/simple_spreadsheet.dir/src/FunctionCell.cpp.o -c /Users/vumilan/CLionProjects/PA2/semwork/simple_spreadsheet/src/FunctionCell.cpp
-
-CMakeFiles/simple_spreadsheet.dir/src/FunctionCell.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/simple_spreadsheet.dir/src/FunctionCell.cpp.i"
-	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/vumilan/CLionProjects/PA2/semwork/simple_spreadsheet/src/FunctionCell.cpp > CMakeFiles/simple_spreadsheet.dir/src/FunctionCell.cpp.i
-
-CMakeFiles/simple_spreadsheet.dir/src/FunctionCell.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/simple_spreadsheet.dir/src/FunctionCell.cpp.s"
-	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/vumilan/CLionProjects/PA2/semwork/simple_spreadsheet/src/FunctionCell.cpp -o CMakeFiles/simple_spreadsheet.dir/src/FunctionCell.cpp.s
-
 CMakeFiles/simple_spreadsheet.dir/src/Sheet.cpp.o: CMakeFiles/simple_spreadsheet.dir/flags.make
 CMakeFiles/simple_spreadsheet.dir/src/Sheet.cpp.o: ../src/Sheet.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/vumilan/CLionProjects/PA2/semwork/simple_spreadsheet/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object CMakeFiles/simple_spreadsheet.dir/src/Sheet.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/vumilan/CLionProjects/PA2/semwork/simple_spreadsheet/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/simple_spreadsheet.dir/src/Sheet.cpp.o"
 	/Library/Developer/CommandLineTools/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/simple_spreadsheet.dir/src/Sheet.cpp.o -c /Users/vumilan/CLionProjects/PA2/semwork/simple_spreadsheet/src/Sheet.cpp
 
 CMakeFiles/simple_spreadsheet.dir/src/Sheet.cpp.i: cmake_force
@@ -150,7 +137,7 @@ CMakeFiles/simple_spreadsheet.dir/src/Sheet.cpp.s: cmake_force
 
 CMakeFiles/simple_spreadsheet.dir/src/Exp.cpp.o: CMakeFiles/simple_spreadsheet.dir/flags.make
 CMakeFiles/simple_spreadsheet.dir/src/Exp.cpp.o: ../src/Exp.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/vumilan/CLionProjects/PA2/semwork/simple_spreadsheet/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building CXX object CMakeFiles/simple_spreadsheet.dir/src/Exp.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/vumilan/CLionProjects/PA2/semwork/simple_spreadsheet/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object CMakeFiles/simple_spreadsheet.dir/src/Exp.cpp.o"
 	/Library/Developer/CommandLineTools/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/simple_spreadsheet.dir/src/Exp.cpp.o -c /Users/vumilan/CLionProjects/PA2/semwork/simple_spreadsheet/src/Exp.cpp
 
 CMakeFiles/simple_spreadsheet.dir/src/Exp.cpp.i: cmake_force
@@ -163,7 +150,7 @@ CMakeFiles/simple_spreadsheet.dir/src/Exp.cpp.s: cmake_force
 
 CMakeFiles/simple_spreadsheet.dir/src/ExpNode.cpp.o: CMakeFiles/simple_spreadsheet.dir/flags.make
 CMakeFiles/simple_spreadsheet.dir/src/ExpNode.cpp.o: ../src/ExpNode.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/vumilan/CLionProjects/PA2/semwork/simple_spreadsheet/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building CXX object CMakeFiles/simple_spreadsheet.dir/src/ExpNode.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/vumilan/CLionProjects/PA2/semwork/simple_spreadsheet/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building CXX object CMakeFiles/simple_spreadsheet.dir/src/ExpNode.cpp.o"
 	/Library/Developer/CommandLineTools/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/simple_spreadsheet.dir/src/ExpNode.cpp.o -c /Users/vumilan/CLionProjects/PA2/semwork/simple_spreadsheet/src/ExpNode.cpp
 
 CMakeFiles/simple_spreadsheet.dir/src/ExpNode.cpp.i: cmake_force
@@ -176,7 +163,7 @@ CMakeFiles/simple_spreadsheet.dir/src/ExpNode.cpp.s: cmake_force
 
 CMakeFiles/simple_spreadsheet.dir/src/ExpTerm.cpp.o: CMakeFiles/simple_spreadsheet.dir/flags.make
 CMakeFiles/simple_spreadsheet.dir/src/ExpTerm.cpp.o: ../src/ExpTerm.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/vumilan/CLionProjects/PA2/semwork/simple_spreadsheet/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Building CXX object CMakeFiles/simple_spreadsheet.dir/src/ExpTerm.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/vumilan/CLionProjects/PA2/semwork/simple_spreadsheet/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building CXX object CMakeFiles/simple_spreadsheet.dir/src/ExpTerm.cpp.o"
 	/Library/Developer/CommandLineTools/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/simple_spreadsheet.dir/src/ExpTerm.cpp.o -c /Users/vumilan/CLionProjects/PA2/semwork/simple_spreadsheet/src/ExpTerm.cpp
 
 CMakeFiles/simple_spreadsheet.dir/src/ExpTerm.cpp.i: cmake_force
@@ -189,7 +176,7 @@ CMakeFiles/simple_spreadsheet.dir/src/ExpTerm.cpp.s: cmake_force
 
 CMakeFiles/simple_spreadsheet.dir/src/FormulaCell.cpp.o: CMakeFiles/simple_spreadsheet.dir/flags.make
 CMakeFiles/simple_spreadsheet.dir/src/FormulaCell.cpp.o: ../src/FormulaCell.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/vumilan/CLionProjects/PA2/semwork/simple_spreadsheet/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Building CXX object CMakeFiles/simple_spreadsheet.dir/src/FormulaCell.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/vumilan/CLionProjects/PA2/semwork/simple_spreadsheet/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Building CXX object CMakeFiles/simple_spreadsheet.dir/src/FormulaCell.cpp.o"
 	/Library/Developer/CommandLineTools/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/simple_spreadsheet.dir/src/FormulaCell.cpp.o -c /Users/vumilan/CLionProjects/PA2/semwork/simple_spreadsheet/src/FormulaCell.cpp
 
 CMakeFiles/simple_spreadsheet.dir/src/FormulaCell.cpp.i: cmake_force
@@ -200,6 +187,19 @@ CMakeFiles/simple_spreadsheet.dir/src/FormulaCell.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/simple_spreadsheet.dir/src/FormulaCell.cpp.s"
 	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/vumilan/CLionProjects/PA2/semwork/simple_spreadsheet/src/FormulaCell.cpp -o CMakeFiles/simple_spreadsheet.dir/src/FormulaCell.cpp.s
 
+CMakeFiles/simple_spreadsheet.dir/src/ExpFunction.cpp.o: CMakeFiles/simple_spreadsheet.dir/flags.make
+CMakeFiles/simple_spreadsheet.dir/src/ExpFunction.cpp.o: ../src/ExpFunction.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/vumilan/CLionProjects/PA2/semwork/simple_spreadsheet/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Building CXX object CMakeFiles/simple_spreadsheet.dir/src/ExpFunction.cpp.o"
+	/Library/Developer/CommandLineTools/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/simple_spreadsheet.dir/src/ExpFunction.cpp.o -c /Users/vumilan/CLionProjects/PA2/semwork/simple_spreadsheet/src/ExpFunction.cpp
+
+CMakeFiles/simple_spreadsheet.dir/src/ExpFunction.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/simple_spreadsheet.dir/src/ExpFunction.cpp.i"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/vumilan/CLionProjects/PA2/semwork/simple_spreadsheet/src/ExpFunction.cpp > CMakeFiles/simple_spreadsheet.dir/src/ExpFunction.cpp.i
+
+CMakeFiles/simple_spreadsheet.dir/src/ExpFunction.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/simple_spreadsheet.dir/src/ExpFunction.cpp.s"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/vumilan/CLionProjects/PA2/semwork/simple_spreadsheet/src/ExpFunction.cpp -o CMakeFiles/simple_spreadsheet.dir/src/ExpFunction.cpp.s
+
 # Object files for target simple_spreadsheet
 simple_spreadsheet_OBJECTS = \
 "CMakeFiles/simple_spreadsheet.dir/main.cpp.o" \
@@ -207,12 +207,12 @@ simple_spreadsheet_OBJECTS = \
 "CMakeFiles/simple_spreadsheet.dir/src/Date.cpp.o" \
 "CMakeFiles/simple_spreadsheet.dir/src/TextCell.cpp.o" \
 "CMakeFiles/simple_spreadsheet.dir/src/DateCell.cpp.o" \
-"CMakeFiles/simple_spreadsheet.dir/src/FunctionCell.cpp.o" \
 "CMakeFiles/simple_spreadsheet.dir/src/Sheet.cpp.o" \
 "CMakeFiles/simple_spreadsheet.dir/src/Exp.cpp.o" \
 "CMakeFiles/simple_spreadsheet.dir/src/ExpNode.cpp.o" \
 "CMakeFiles/simple_spreadsheet.dir/src/ExpTerm.cpp.o" \
-"CMakeFiles/simple_spreadsheet.dir/src/FormulaCell.cpp.o"
+"CMakeFiles/simple_spreadsheet.dir/src/FormulaCell.cpp.o" \
+"CMakeFiles/simple_spreadsheet.dir/src/ExpFunction.cpp.o"
 
 # External object files for target simple_spreadsheet
 simple_spreadsheet_EXTERNAL_OBJECTS =
@@ -222,12 +222,12 @@ simple_spreadsheet: CMakeFiles/simple_spreadsheet.dir/src/Cell.cpp.o
 simple_spreadsheet: CMakeFiles/simple_spreadsheet.dir/src/Date.cpp.o
 simple_spreadsheet: CMakeFiles/simple_spreadsheet.dir/src/TextCell.cpp.o
 simple_spreadsheet: CMakeFiles/simple_spreadsheet.dir/src/DateCell.cpp.o
-simple_spreadsheet: CMakeFiles/simple_spreadsheet.dir/src/FunctionCell.cpp.o
 simple_spreadsheet: CMakeFiles/simple_spreadsheet.dir/src/Sheet.cpp.o
 simple_spreadsheet: CMakeFiles/simple_spreadsheet.dir/src/Exp.cpp.o
 simple_spreadsheet: CMakeFiles/simple_spreadsheet.dir/src/ExpNode.cpp.o
 simple_spreadsheet: CMakeFiles/simple_spreadsheet.dir/src/ExpTerm.cpp.o
 simple_spreadsheet: CMakeFiles/simple_spreadsheet.dir/src/FormulaCell.cpp.o
+simple_spreadsheet: CMakeFiles/simple_spreadsheet.dir/src/ExpFunction.cpp.o
 simple_spreadsheet: CMakeFiles/simple_spreadsheet.dir/build.make
 simple_spreadsheet: CMakeFiles/simple_spreadsheet.dir/link.txt
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/Users/vumilan/CLionProjects/PA2/semwork/simple_spreadsheet/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_12) "Linking CXX executable simple_spreadsheet"

@@ -12,7 +12,6 @@
 #include "exceptions/CycleException.h"
 #include "exceptions/ErrorCellLinkException.h"
 #include <iostream>
-#include <sstream>
 
 
 class ExpTerm : public Exp {
@@ -23,29 +22,23 @@ public:
 
     explicit ExpTerm(bool cycleDetected) : cycleDetected(cycleDetected) {}
 
-    void print() const override {
-        std::cout << ' ' << stringValue << ' ';
-    }
-
     std::shared_ptr<Exp> clone() const override {
         return std::make_shared<ExpTerm>(ExpTerm(*this));
     }
 
-    double evaluate() const override {
-        if (cycleDetected)
-            throw CycleException();
-        std::string tmp = stringValue;
-        if (cellPtr) {
-            if (cellPtr->hasError())
-                throw ErrorCellLinkException();
-            tmp = cellPtr->value();
+    double evaluate() const override;
+
+    std::string evaluateString() const override {
+        if (!cycleDetected) {
+            if (cellPtr) {
+                if (cellPtr->hasError())
+                    throw ErrorCellLinkException();
+                return cellPtr->value();
+
+            }
+            return stringValue;
         }
-        char *pEnd = nullptr;
-        double number = std::strtod(tmp.c_str(), &pEnd);
-        if (*pEnd) {
-            throw NotANumberException();
-        }
-        return number;
+        throw ErrorCellLinkException();
     }
 
 private:

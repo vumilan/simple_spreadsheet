@@ -10,11 +10,14 @@
 #include "memory"
 #include <iostream>
 #include <string>
+#include <vector>
 #include <map>
 #include "Exp.h"
 #include "ExpTerm.h"
 #include "ExpNode.h"
 #include "FormulaCell.h"
+#include "ExpFunction.h"
+#include <fstream>
 
 class Sheet {
 public:
@@ -28,13 +31,15 @@ public:
 
     void updateCellRelations(std::pair<size_t, size_t> coordinates, std::shared_ptr<Cell> &ptrToCell);
 
+    void updateDescendants(std::shared_ptr<Cell> &ptrToCell);
+
     std::shared_ptr<Exp> parseExpr(std::shared_ptr<Cell> &parentCell, const std::string &str);
 
     static std::string removeWhiteSpaces(const std::string &value);
 
     static bool isACellCoordinate(const std::string &str);
 
-    static bool isAFunction(const std::string &str);
+    int findFunction(const std::string &str);
 
     static std::pair<size_t, size_t> convertToCellCoordinate(const std::string &str);
 
@@ -45,18 +50,14 @@ public:
         return true;
     }
 
-    bool saveSheet(const char *fileName) {
-        return true;
-    }
+    bool saveSheet(const char *fileName);
 
 private:
     std::string name;
-
     size_t maxRow;
-
     size_t maxColumn;
-
     std::map<std::pair<size_t, size_t>, std::shared_ptr<Cell>> cells;
+    std::map<std::string, int> definedFunctions = {{"SIN", 1}, {"COS", 2}, {"ABS", 3}, {"CONCAT", 4}};
 };
 
 

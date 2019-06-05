@@ -14,6 +14,7 @@
 #include "exceptions/NotANumberException.h"
 #include "exceptions/DivisionByZeroException.h"
 #include "exceptions/CycleException.h"
+#include "exceptions/ErrorCellLinkException.h"
 
 class FormulaCell : public Cell {
 public:
@@ -33,7 +34,8 @@ public:
         expTreeRoot = expTree;
         if (expTreeRoot) {
             try {
-                stringValue = std::to_string(expTreeRoot->evaluate());
+                stringValue = expTreeRoot->evaluateString();
+                error = false;
             }
             catch (DivisionByZeroException &e) {
                 stringValue = "#DIV/0!";
@@ -43,8 +45,16 @@ public:
                 stringValue = "#CYCLE!";
                 error = true;
             }
-            catch (...) {
+            catch (NotANumberException &e) {
                 stringValue = "#VALUE!";
+                error = true;
+            }
+            catch (ErrorCellLinkException &e) {
+                stringValue = "#LINK!";
+                error = true;
+            }
+            catch (...) {
+                stringValue = "#ERROR!";
                 error = true;
             }
         } else {

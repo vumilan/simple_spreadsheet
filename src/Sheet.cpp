@@ -23,23 +23,27 @@ std::shared_ptr<Cell> Sheet::addCell(std::pair<size_t, size_t> coordinates, std:
         // replace new pointer with old one
         cellsIter->second = ptrToCell;
         // if there is some error with the added cell, compute no further
-
         if (ptrToCell->hasError()) {
             return ptrToCell;
         }
         // update expression tree for each descendant cell
-        for (auto descendant : ptrToCell->getDescendantCells()) {
-            std::shared_ptr<Exp> newExpTree;
-            newExpTree = parseExpr(descendant, removeWhiteSpaces(descendant->formula()).substr(1));
-            descendant->setExpTree(newExpTree);
-        }
+        updateDescendants(ptrToCell);
     }
     return ptrToCell;
 }
 
+void Sheet::updateDescendants(std::shared_ptr<Cell> &ptrToCell) {
+    std::set<std::shared_ptr<Cell>> descendants = ptrToCell->getDescendantCells();
+    for (auto descendant : descendants) {
+        std::shared_ptr<Exp> newExpTree;
+        newExpTree = parseExpr(descendant, removeWhiteSpaces(descendant->formula()).substr(1));
+        descendant->setExpTree(newExpTree);
+    }
+}
+
 void Sheet::updateCellRelations(std::pair<size_t, size_t> coordinates, std::shared_ptr<Cell> &ptrToCell) {
     auto cellsIter = cells.find(coordinates);
-    if (cellsIter->second) {
+    if (cellsIter != cells.end()) {
         cellsIter->second->replaceFromRelations(cellsIter->second, ptrToCell);
         ptrToCell->setDescendantCells(cellsIter->second->getDescendantCells());
         ptrToCell->setAncestorCells(cellsIter->second->getAncestorCells());
@@ -113,7 +117,28 @@ std::shared_ptr<Exp> Sheet::parseExpr(std::shared_ptr<Cell> &newCellPtr, const s
         }
     } else {
         // case value or coordinate or function
-        if (isACellCoordinate(str)) {
+        int functionType = findFunction(str);
+        if (functionType != -1) {
+            // extract string inside of function
+            std::string insideFunction = str.substr(str.find('(') + 1, str.size() - str.find('(') - 2);
+            // concat function
+            if (functionType == 4) {
+                std::vector<std::shared_ptr<Exp>> expTrees;
+                size_t pos = 0;
+                std::string token;
+                // split the inside of concat function into tokens and create expression trees from each token
+                while ((pos = insideFunction.find(',')) != std::string::npos) {
+                    token = insideFunction.substr(0, pos);
+                    expTrees.push_back(parseExpr(newCellPtr, token));
+                    insideFunction.erase(0, pos + 1);
+                }
+                expTrees.push_back(parseExpr(newCellPtr, insideFunction));
+                return ExpFunction(functionType, expTrees).clone();
+            } else { // other functions
+                auto newExpTree = parseExpr(newCellPtr, insideFunction);
+                return ExpFunction(functionType, newExpTree).clone();
+            }
+        } else if (isACellCoordinate(str)) {
             std::pair<size_t, size_t> coordinates = convertToCellCoordinate(str);
             auto iter = cells.find(coordinates);
             // add empty cell if cell not found or return found cell
@@ -124,8 +149,6 @@ std::shared_ptr<Exp> Sheet::parseExpr(std::shared_ptr<Cell> &newCellPtr, const s
                 return ExpTerm(true).clone();
             }
             return ExpTerm(ancestorCell).clone();
-        } else if (isAFunction(str)) {
-
         } else {
             return ExpTerm(str).clone();
         }
@@ -150,7 +173,7 @@ std::string Sheet::removeWhiteSpaces(const std::string &value) {
 void Sheet::put(size_t x, size_t y, const std::string &value) {
     std::pair<size_t, size_t> coordinates = std::make_pair(x, y);
     std::shared_ptr<Cell> newCellPtr = nullptr;
-    if (value[0] == '=') {
+    if (value[0] == '=' && value.size() > 1) {
         newCellPtr = FormulaCell(value).clone();
         updateCellRelations(coordinates, newCellPtr);
         std::shared_ptr<Exp> expTree = parseExpr(newCellPtr, removeWhiteSpaces(value).substr(1));
@@ -159,12 +182,17 @@ void Sheet::put(size_t x, size_t y, const std::string &value) {
         newCellPtr = TextCell(value, value).clone();
     }
     addCell(coordinates, newCellPtr);
+    // update max row and max column
+    if (maxColumn < x)
+        maxColumn = x;
+    if (maxRow < y)
+        maxRow = y;
 }
 
 /**
  * check if input string is a cell coordinate (AAA222 is a coordinate, A2B is not)
  * @param str
- * @return
+ * @return bool
  */
 bool Sheet::isACellCoordinate(const std::string &str) {
     size_t i;
@@ -197,12 +225,20 @@ std::pair<size_t, size_t> Sheet::convertToCellCoordinate(const std::string &str)
     return std::make_pair(x, std::stoul(str.substr(i)));
 }
 
-
-bool Sheet::isAFunction(const std::string &str) {
-    if (str.substr(0, 3) == "sin") {
-
+/**
+ * Check if input string is a function with the right amount of parentheses
+ * @param str
+ * @return bool
+ */
+int Sheet::findFunction(const std::string &str) {
+    if (str.size() > 3 && str[str.size() - 1] == ')') {
+        std::string header = str.substr(0, str.find('('));
+        auto findIter = definedFunctions.find(header);
+        if (findIter == definedFunctions.end())
+            return -1;
+        return findIter->second;
     }
-    return false;
+    return -1;
 }
 
 /**
@@ -219,3 +255,13 @@ void Sheet::printSheet(size_t x, size_t y, size_t width, size_t height) {
     }
 }
 
+bool Sheet::saveSheet(const char *fileName) {
+    std::ofstream myfile;
+    myfile.open (fileName);
+    myfile << "This is the first cell in the first column.\n";
+    myfile << "a,b,c,\n";
+    myfile << "c,s,v,\n";
+    myfile << "1,2,3.456\n";
+    myfile << "semi;colon";
+    myfile.close();
+}

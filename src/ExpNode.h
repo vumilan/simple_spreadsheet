@@ -15,13 +15,6 @@ public:
     ExpNode(char op, std::shared_ptr<Exp> left, std::shared_ptr<Exp> right)
         : op(op), leftExpr(std::move(left)), rightExpr(std::move(right)) {}
 
-    void print() const override {
-        std::cout << '(' << op << ' ';
-        leftExpr->print();
-        rightExpr->print();
-        std::cout << ')';
-    }
-
     std::shared_ptr<Exp> clone() const override {
         return std::make_shared<ExpNode>(ExpNode(*this));
     }
@@ -38,6 +31,22 @@ public:
         if (rightNumber == 0)
             throw DivisionByZeroException();
         return leftExpr->evaluate() / rightExpr->evaluate();
+    }
+
+    static std::string deleteUselessZeroes(const std::string &str) {
+        size_t pos, i;
+        if ((pos = str.find('.')) == std::string::npos)
+            return str;
+        std::string tmp = str.substr(pos);
+        for (i = tmp.size() - 1; i >= 0; --i) {
+            if (tmp[i] != '0' && tmp[i] != '.')
+                break;
+        }
+        return str.substr(0, pos + i + 1);
+    }
+
+    std::string evaluateString() const override {
+        return deleteUselessZeroes(std::to_string(this->evaluate()));
     }
 
 private:

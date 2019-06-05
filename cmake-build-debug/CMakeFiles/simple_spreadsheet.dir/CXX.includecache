@@ -16,6 +16,10 @@ src/TextCell.h
 src/DateCell.h
 /Users/vumilan/CLionProjects/PA2/semwork/simple_spreadsheet/src/DateCell.h
 
+/Users/vumilan/CLionProjects/PA2/semwork/simple_spreadsheet/src/Cell.cpp
+Cell.h
+/Users/vumilan/CLionProjects/PA2/semwork/simple_spreadsheet/src/Cell.h
+
 /Users/vumilan/CLionProjects/PA2/semwork/simple_spreadsheet/src/Cell.h
 memory
 -
@@ -32,6 +36,10 @@ Exp.h
 ostream
 -
 
+/Users/vumilan/CLionProjects/PA2/semwork/simple_spreadsheet/src/DateCell.cpp
+DateCell.h
+/Users/vumilan/CLionProjects/PA2/semwork/simple_spreadsheet/src/DateCell.h
+
 /Users/vumilan/CLionProjects/PA2/semwork/simple_spreadsheet/src/DateCell.h
 Date.h
 /Users/vumilan/CLionProjects/PA2/semwork/simple_spreadsheet/src/Date.h
@@ -42,9 +50,37 @@ memory
 string
 -
 
+/Users/vumilan/CLionProjects/PA2/semwork/simple_spreadsheet/src/Exp.cpp
+Exp.h
+/Users/vumilan/CLionProjects/PA2/semwork/simple_spreadsheet/src/Exp.h
+
 /Users/vumilan/CLionProjects/PA2/semwork/simple_spreadsheet/src/Exp.h
 memory
 -
+string
+-
+
+/Users/vumilan/CLionProjects/PA2/semwork/simple_spreadsheet/src/ExpFunction.cpp
+ExpFunction.h
+/Users/vumilan/CLionProjects/PA2/semwork/simple_spreadsheet/src/ExpFunction.h
+
+/Users/vumilan/CLionProjects/PA2/semwork/simple_spreadsheet/src/ExpFunction.h
+Exp.h
+/Users/vumilan/CLionProjects/PA2/semwork/simple_spreadsheet/src/Exp.h
+string
+-
+vector
+-
+iostream
+-
+math.h
+-
+exceptions/ErrorCellLinkException.h
+/Users/vumilan/CLionProjects/PA2/semwork/simple_spreadsheet/src/exceptions/ErrorCellLinkException.h
+
+/Users/vumilan/CLionProjects/PA2/semwork/simple_spreadsheet/src/ExpNode.cpp
+ExpNode.h
+/Users/vumilan/CLionProjects/PA2/semwork/simple_spreadsheet/src/ExpNode.h
 
 /Users/vumilan/CLionProjects/PA2/semwork/simple_spreadsheet/src/ExpNode.h
 Exp.h
@@ -75,8 +111,6 @@ exceptions/ErrorCellLinkException.h
 /Users/vumilan/CLionProjects/PA2/semwork/simple_spreadsheet/src/exceptions/ErrorCellLinkException.h
 iostream
 -
-sstream
--
 
 /Users/vumilan/CLionProjects/PA2/semwork/simple_spreadsheet/src/FormulaCell.cpp
 FormulaCell.h
@@ -101,6 +135,8 @@ exceptions/DivisionByZeroException.h
 /Users/vumilan/CLionProjects/PA2/semwork/simple_spreadsheet/src/exceptions/DivisionByZeroException.h
 exceptions/CycleException.h
 /Users/vumilan/CLionProjects/PA2/semwork/simple_spreadsheet/src/exceptions/CycleException.h
+exceptions/ErrorCellLinkException.h
+/Users/vumilan/CLionProjects/PA2/semwork/simple_spreadsheet/src/exceptions/ErrorCellLinkException.h
 
 /Users/vumilan/CLionProjects/PA2/semwork/simple_spreadsheet/src/Sheet.cpp
 Sheet.h
@@ -117,6 +153,8 @@ iostream
 -
 string
 -
+vector
+-
 map
 -
 Exp.h
@@ -127,6 +165,14 @@ ExpNode.h
 /Users/vumilan/CLionProjects/PA2/semwork/simple_spreadsheet/src/ExpNode.h
 FormulaCell.h
 /Users/vumilan/CLionProjects/PA2/semwork/simple_spreadsheet/src/FormulaCell.h
+ExpFunction.h
+/Users/vumilan/CLionProjects/PA2/semwork/simple_spreadsheet/src/ExpFunction.h
+fstream
+-
+
+/Users/vumilan/CLionProjects/PA2/semwork/simple_spreadsheet/src/TextCell.cpp
+TextCell.h
+/Users/vumilan/CLionProjects/PA2/semwork/simple_spreadsheet/src/TextCell.h
 
 /Users/vumilan/CLionProjects/PA2/semwork/simple_spreadsheet/src/TextCell.h
 string

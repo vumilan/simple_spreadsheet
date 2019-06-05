@@ -6,6 +6,7 @@ CMakeFiles/simple_spreadsheet.dir/main.cpp.o: ../src/Cell.h
 CMakeFiles/simple_spreadsheet.dir/main.cpp.o: ../src/Date.h
 CMakeFiles/simple_spreadsheet.dir/main.cpp.o: ../src/DateCell.h
 CMakeFiles/simple_spreadsheet.dir/main.cpp.o: ../src/Exp.h
+CMakeFiles/simple_spreadsheet.dir/main.cpp.o: ../src/ExpFunction.h
 CMakeFiles/simple_spreadsheet.dir/main.cpp.o: ../src/ExpNode.h
 CMakeFiles/simple_spreadsheet.dir/main.cpp.o: ../src/ExpTerm.h
 CMakeFiles/simple_spreadsheet.dir/main.cpp.o: ../src/FormulaCell.h
@@ -32,6 +33,11 @@ CMakeFiles/simple_spreadsheet.dir/src/DateCell.cpp.o: ../src/Exp.h
 CMakeFiles/simple_spreadsheet.dir/src/Exp.cpp.o: ../src/Exp.cpp
 CMakeFiles/simple_spreadsheet.dir/src/Exp.cpp.o: ../src/Exp.h
 
+CMakeFiles/simple_spreadsheet.dir/src/ExpFunction.cpp.o: ../src/Exp.h
+CMakeFiles/simple_spreadsheet.dir/src/ExpFunction.cpp.o: ../src/ExpFunction.cpp
+CMakeFiles/simple_spreadsheet.dir/src/ExpFunction.cpp.o: ../src/ExpFunction.h
+CMakeFiles/simple_spreadsheet.dir/src/ExpFunction.cpp.o: ../src/exceptions/ErrorCellLinkException.h
+
 CMakeFiles/simple_spreadsheet.dir/src/ExpNode.cpp.o: ../src/Exp.h
 CMakeFiles/simple_spreadsheet.dir/src/ExpNode.cpp.o: ../src/ExpNode.cpp
 CMakeFiles/simple_spreadsheet.dir/src/ExpNode.cpp.o: ../src/ExpNode.h
@@ -51,15 +57,12 @@ CMakeFiles/simple_spreadsheet.dir/src/FormulaCell.cpp.o: ../src/FormulaCell.cpp
 CMakeFiles/simple_spreadsheet.dir/src/FormulaCell.cpp.o: ../src/FormulaCell.h
 CMakeFiles/simple_spreadsheet.dir/src/FormulaCell.cpp.o: ../src/exceptions/CycleException.h
 CMakeFiles/simple_spreadsheet.dir/src/FormulaCell.cpp.o: ../src/exceptions/DivisionByZeroException.h
+CMakeFiles/simple_spreadsheet.dir/src/FormulaCell.cpp.o: ../src/exceptions/ErrorCellLinkException.h
 CMakeFiles/simple_spreadsheet.dir/src/FormulaCell.cpp.o: ../src/exceptions/NotANumberException.h
-
-CMakeFiles/simple_spreadsheet.dir/src/FunctionCell.cpp.o: ../src/Cell.h
-CMakeFiles/simple_spreadsheet.dir/src/FunctionCell.cpp.o: ../src/Exp.h
-CMakeFiles/simple_spreadsheet.dir/src/FunctionCell.cpp.o: ../src/FunctionCell.cpp
-CMakeFiles/simple_spreadsheet.dir/src/FunctionCell.cpp.o: ../src/FunctionCell.h
 
 CMakeFiles/simple_spreadsheet.dir/src/Sheet.cpp.o: ../src/Cell.h
 CMakeFiles/simple_spreadsheet.dir/src/Sheet.cpp.o: ../src/Exp.h
+CMakeFiles/simple_spreadsheet.dir/src/Sheet.cpp.o: ../src/ExpFunction.h
 CMakeFiles/simple_spreadsheet.dir/src/Sheet.cpp.o: ../src/ExpNode.h
 CMakeFiles/simple_spreadsheet.dir/src/Sheet.cpp.o: ../src/ExpTerm.h
 CMakeFiles/simple_spreadsheet.dir/src/Sheet.cpp.o: ../src/FormulaCell.h

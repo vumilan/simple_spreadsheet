@@ -6,6 +6,7 @@
 #define SIMPLE_SPREADSHEET_EXP_H
 
 #include <memory>
+#include <string>
 
 /**
  * Parent virtual class for the Recursive descent parser
@@ -13,8 +14,8 @@
  */
 class Exp {
 public:
-    virtual void print() const = 0;
     virtual double evaluate() const = 0;
+    virtual std::string evaluateString() const = 0;
     virtual std::shared_ptr<Exp> clone() const = 0;
     virtual ~Exp() = default;
 };

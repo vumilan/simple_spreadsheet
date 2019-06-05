@@ -258,6 +258,33 @@ src/Exp.cpp.s:
 	$(MAKE) -f CMakeFiles/simple_spreadsheet.dir/build.make CMakeFiles/simple_spreadsheet.dir/src/Exp.cpp.s
 .PHONY : src/Exp.cpp.s
 
+src/ExpFunction.o: src/ExpFunction.cpp.o
+
+.PHONY : src/ExpFunction.o
+
+# target to build an object file
+src/ExpFunction.cpp.o:
+	$(MAKE) -f CMakeFiles/simple_spreadsheet.dir/build.make CMakeFiles/simple_spreadsheet.dir/src/ExpFunction.cpp.o
+.PHONY : src/ExpFunction.cpp.o
+
+src/ExpFunction.i: src/ExpFunction.cpp.i
+
+.PHONY : src/ExpFunction.i
+
+# target to preprocess a source file
+src/ExpFunction.cpp.i:
+	$(MAKE) -f CMakeFiles/simple_spreadsheet.dir/build.make CMakeFiles/simple_spreadsheet.dir/src/ExpFunction.cpp.i
+.PHONY : src/ExpFunction.cpp.i
+
+src/ExpFunction.s: src/ExpFunction.cpp.s
+
+.PHONY : src/ExpFunction.s
+
+# target to generate assembly for a file
+src/ExpFunction.cpp.s:
+	$(MAKE) -f CMakeFiles/simple_spreadsheet.dir/build.make CMakeFiles/simple_spreadsheet.dir/src/ExpFunction.cpp.s
+.PHONY : src/ExpFunction.cpp.s
+
 src/ExpNode.o: src/ExpNode.cpp.o
 
 .PHONY : src/ExpNode.o
@@ -339,33 +366,6 @@ src/FormulaCell.cpp.s:
 	$(MAKE) -f CMakeFiles/simple_spreadsheet.dir/build.make CMakeFiles/simple_spreadsheet.dir/src/FormulaCell.cpp.s
 .PHONY : src/FormulaCell.cpp.s
 
-src/FunctionCell.o: src/FunctionCell.cpp.o
-
-.PHONY : src/FunctionCell.o
-
-# target to build an object file
-src/FunctionCell.cpp.o:
-	$(MAKE) -f CMakeFiles/simple_spreadsheet.dir/build.make CMakeFiles/simple_spreadsheet.dir/src/FunctionCell.cpp.o
-.PHONY : src/FunctionCell.cpp.o
-
-src/FunctionCell.i: src/FunctionCell.cpp.i
-
-.PHONY : src/FunctionCell.i
-
-# target to preprocess a source file
-src/FunctionCell.cpp.i:
-	$(MAKE) -f CMakeFiles/simple_spreadsheet.dir/build.make CMakeFiles/simple_spreadsheet.dir/src/FunctionCell.cpp.i
-.PHONY : src/FunctionCell.cpp.i
-
-src/FunctionCell.s: src/FunctionCell.cpp.s
-
-.PHONY : src/FunctionCell.s
-
-# target to generate assembly for a file
-src/FunctionCell.cpp.s:
-	$(MAKE) -f CMakeFiles/simple_spreadsheet.dir/build.make CMakeFiles/simple_spreadsheet.dir/src/FunctionCell.cpp.s
-.PHONY : src/FunctionCell.cpp.s
-
 src/Sheet.o: src/Sheet.cpp.o
 
 .PHONY : src/Sheet.o
@@ -444,6 +444,9 @@ help:
 	@echo "... src/Exp.o"
 	@echo "... src/Exp.i"
 	@echo "... src/Exp.s"
+	@echo "... src/ExpFunction.o"
+	@echo "... src/ExpFunction.i"
+	@echo "... src/ExpFunction.s"
 	@echo "... src/ExpNode.o"
 	@echo "... src/ExpNode.i"
 	@echo "... src/ExpNode.s"
@@ -453,9 +456,6 @@ help:
 	@echo "... src/FormulaCell.o"
 	@echo "... src/FormulaCell.i"
 	@echo "... src/FormulaCell.s"
-	@echo "... src/FunctionCell.o"
-	@echo "... src/FunctionCell.i"
-	@echo "... src/FunctionCell.s"
 	@echo "... src/Sheet.o"
 	@echo "... src/Sheet.i"
 	@echo "... src/Sheet.s"
