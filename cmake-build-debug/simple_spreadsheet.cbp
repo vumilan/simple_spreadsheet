@@ -80,67 +80,67 @@
 				</MakeCommands>
 			</Target>
 		</Build>
-		<Unit filename="/Users/vumilan/CLionProjects/PA2/semwork/simple_spreadsheet/main.cpp">
+		<Unit filename="/Users/vumilan/CLionProjects/PA2/semwork/simple_spreadsheet/src/cell.cpp">
 			<Option target="simple_spreadsheet"/>
 		</Unit>
-		<Unit filename="/Users/vumilan/CLionProjects/PA2/semwork/simple_spreadsheet/src/Cell.cpp">
+		<Unit filename="/Users/vumilan/CLionProjects/PA2/semwork/simple_spreadsheet/src/cell.h">
 			<Option target="simple_spreadsheet"/>
 		</Unit>
-		<Unit filename="/Users/vumilan/CLionProjects/PA2/semwork/simple_spreadsheet/src/Cell.h">
+		<Unit filename="/Users/vumilan/CLionProjects/PA2/semwork/simple_spreadsheet/src/exp.cpp">
 			<Option target="simple_spreadsheet"/>
 		</Unit>
-		<Unit filename="/Users/vumilan/CLionProjects/PA2/semwork/simple_spreadsheet/src/Date.cpp">
+		<Unit filename="/Users/vumilan/CLionProjects/PA2/semwork/simple_spreadsheet/src/exp.h">
 			<Option target="simple_spreadsheet"/>
 		</Unit>
-		<Unit filename="/Users/vumilan/CLionProjects/PA2/semwork/simple_spreadsheet/src/Date.h">
+		<Unit filename="/Users/vumilan/CLionProjects/PA2/semwork/simple_spreadsheet/src/expFunction.cpp">
 			<Option target="simple_spreadsheet"/>
 		</Unit>
-		<Unit filename="/Users/vumilan/CLionProjects/PA2/semwork/simple_spreadsheet/src/DateCell.cpp">
+		<Unit filename="/Users/vumilan/CLionProjects/PA2/semwork/simple_spreadsheet/src/expFunction.h">
 			<Option target="simple_spreadsheet"/>
 		</Unit>
-		<Unit filename="/Users/vumilan/CLionProjects/PA2/semwork/simple_spreadsheet/src/DateCell.h">
+		<Unit filename="/Users/vumilan/CLionProjects/PA2/semwork/simple_spreadsheet/src/expNode.cpp">
 			<Option target="simple_spreadsheet"/>
 		</Unit>
-		<Unit filename="/Users/vumilan/CLionProjects/PA2/semwork/simple_spreadsheet/src/Exp.cpp">
+		<Unit filename="/Users/vumilan/CLionProjects/PA2/semwork/simple_spreadsheet/src/expNode.h">
 			<Option target="simple_spreadsheet"/>
 		</Unit>
-		<Unit filename="/Users/vumilan/CLionProjects/PA2/semwork/simple_spreadsheet/src/Exp.h">
+		<Unit filename="/Users/vumilan/CLionProjects/PA2/semwork/simple_spreadsheet/src/expTerm.cpp">
 			<Option target="simple_spreadsheet"/>
 		</Unit>
-		<Unit filename="/Users/vumilan/CLionProjects/PA2/semwork/simple_spreadsheet/src/ExpFunction.cpp">
+		<Unit filename="/Users/vumilan/CLionProjects/PA2/semwork/simple_spreadsheet/src/expTerm.h">
 			<Option target="simple_spreadsheet"/>
 		</Unit>
-		<Unit filename="/Users/vumilan/CLionProjects/PA2/semwork/simple_spreadsheet/src/ExpFunction.h">
+		<Unit filename="/Users/vumilan/CLionProjects/PA2/semwork/simple_spreadsheet/src/formulaCell.cpp">
 			<Option target="simple_spreadsheet"/>
 		</Unit>
-		<Unit filename="/Users/vumilan/CLionProjects/PA2/semwork/simple_spreadsheet/src/ExpNode.cpp">
+		<Unit filename="/Users/vumilan/CLionProjects/PA2/semwork/simple_spreadsheet/src/formulaCell.h">
 			<Option target="simple_spreadsheet"/>
 		</Unit>
-		<Unit filename="/Users/vumilan/CLionProjects/PA2/semwork/simple_spreadsheet/src/ExpNode.h">
+		<Unit filename="/Users/vumilan/CLionProjects/PA2/semwork/simple_spreadsheet/src/main.cpp">
 			<Option target="simple_spreadsheet"/>
 		</Unit>
-		<Unit filename="/Users/vumilan/CLionProjects/PA2/semwork/simple_spreadsheet/src/ExpTerm.cpp">
+		<Unit filename="/Users/vumilan/CLionProjects/PA2/semwork/simple_spreadsheet/src/sheet.cpp">
 			<Option target="simple_spreadsheet"/>
 		</Unit>
-		<Unit filename="/Users/vumilan/CLionProjects/PA2/semwork/simple_spreadsheet/src/ExpTerm.h">
+		<Unit filename="/Users/vumilan/CLionProjects/PA2/semwork/simple_spreadsheet/src/sheet.h">
 			<Option target="simple_spreadsheet"/>
 		</Unit>
-		<Unit filename="/Users/vumilan/CLionProjects/PA2/semwork/simple_spreadsheet/src/FormulaCell.cpp">
+		<Unit filename="/Users/vumilan/CLionProjects/PA2/semwork/simple_spreadsheet/src/sheetController.cpp">
 			<Option target="simple_spreadsheet"/>
 		</Unit>
-		<Unit filename="/Users/vumilan/CLionProjects/PA2/semwork/simple_spreadsheet/src/FormulaCell.h">
+		<Unit filename="/Users/vumilan/CLionProjects/PA2/semwork/simple_spreadsheet/src/sheetController.h">
 			<Option target="simple_spreadsheet"/>
 		</Unit>
-		<Unit filename="/Users/vumilan/CLionProjects/PA2/semwork/simple_spreadsheet/src/Sheet.cpp">
+		<Unit filename="/Users/vumilan/CLionProjects/PA2/semwork/simple_spreadsheet/src/sheetView.cpp">
 			<Option target="simple_spreadsheet"/>
 		</Unit>
-		<Unit filename="/Users/vumilan/CLionProjects/PA2/semwork/simple_spreadsheet/src/Sheet.h">
+		<Unit filename="/Users/vumilan/CLionProjects/PA2/semwork/simple_spreadsheet/src/sheetView.h">
 			<Option target="simple_spreadsheet"/>
 		</Unit>
-		<Unit filename="/Users/vumilan/CLionProjects/PA2/semwork/simple_spreadsheet/src/TextCell.cpp">
+		<Unit filename="/Users/vumilan/CLionProjects/PA2/semwork/simple_spreadsheet/src/textCell.cpp">
 			<Option target="simple_spreadsheet"/>
 		</Unit>
-		<Unit filename="/Users/vumilan/CLionProjects/PA2/semwork/simple_spreadsheet/src/TextCell.h">
+		<Unit filename="/Users/vumilan/CLionProjects/PA2/semwork/simple_spreadsheet/src/textCell.h">
 			<Option target="simple_spreadsheet"/>
 		</Unit>
 		<Unit filename="/Users/vumilan/CLionProjects/PA2/semwork/simple_spreadsheet/CMakeLists.txt">
