@@ -21,7 +21,7 @@
 
 class Sheet {
 public:
-    explicit Sheet(std::string name);
+    Sheet();
 
     ~Sheet() = default;
 
@@ -49,12 +49,17 @@ public:
 
     static std::pair<size_t, size_t> convertToCellCoordinate(const std::string &str);
 
-    void printSheet(size_t x, size_t y, size_t width, size_t height);
+//    void printSheet(size_t x, size_t y, size_t width, size_t height);
 
     void save(const std::string &fileName);
 
+    const std::map<std::pair<size_t, size_t>, std::shared_ptr<Cell>> &getCells() const;
+
+    size_t getMaxRow() const;
+
+    size_t getMaxColumn() const;
+
 private:
-    std::string name;
     size_t maxRow;
     size_t maxColumn;
     std::map<std::pair<size_t, size_t>, std::shared_ptr<Cell>> cells;

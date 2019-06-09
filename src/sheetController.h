@@ -8,34 +8,31 @@
 #include "sheetView.h"
 #include <ncurses.h>
 
-class SheetController{
+class SheetController {
 
 public:
 
     SheetController();
+
     ~SheetController() = default;
 
-    void moveLeft(WINDOW* win);
-    void moveRight(WINDOW* win);
-    void moveUp(WINDOW* win);
-    void moveDown(WINDOW* win);
-    void openEditor(Sheet &sheet, std::pair<size_t, size_t> cursor);
-    void pressEnter(Sheet &sheet, std::pair<size_t, size_t> cursor);
-    void pressBackspace(Sheet &sheet, std::pair<size_t, size_t> cursor);
+    void moveLeft(SheetView &view);
 
-    void handleInput(WINDOW* win, std::pair<size_t, size_t> cursor, Sheet &sheet, int ch);
-    bool validateFormula(std::string formula);
-    void parseCell(WINDOW* win, std::pair<size_t, size_t> cursor, Sheet &sheet);
+    void moveRight(SheetView &view);
+
+    void moveUp(SheetView &view);
+
+    void moveDown(SheetView &view);
+
+    void pressedEnter(SheetView &view);
+
+    void handleInput(SheetView &view, int enteredKey);
 
     void run(Sheet &sheet);
 
 private:
-    int row, col;
-    const int maxCol = 80;
-    const int maxRow = 23;
-    const int maxCellSize = 8;
-
-
+    size_t x;
+    size_t y;
 
 
 };

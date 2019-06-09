@@ -9,33 +9,51 @@
 #include <string>
 #include "sheet.h"
 
-class SheetView{
+class SheetView {
 public:
-    SheetView();
+    explicit SheetView(Sheet &sheet);
+
     ~SheetView();
 
-    void initHeader();
-    void drawSheet(Sheet &sheet);
-    void undoCursor(Sheet &sheet);
-    void drawCursor(Sheet &sheet);
-    bool validateFormula(std::string formula);
-    void parseCell(Cell &cell, int row, int col);
-    std::pair<size_t, size_t> getCursor();
-    void setCursor(int row, int col);
+    void drawHeader();
 
-    char getChar();
-    WINDOW* getWin();
+    void drawSheet();
+
+    const std::pair<size_t, size_t> &getFirstCellCoordinates() const;
+
+    static std::string fillHashtags(size_t len);
+
+    static std::string fillSpaces(size_t len);
+
+//    static std::string columnNumberToStr(size_t colNum);
+
+    void updateCellValueView(std::pair<size_t, size_t> cursorPos);
+
+    void writingInCell(std::pair<size_t, size_t> cursorPos, const std::string &str);
+
+    size_t getMaxRow() const;
+
+    size_t getMaxColumn() const;
+
+    Sheet &getSheet();
+
+    WINDOW *getWin();
+
     void exitSheet();
 
 private:
-    const int MAXrow = 24;
-    const int MAXcol = 80;
-    const int CellSize = 8;
-    std::pair<size_t, size_t> cursor;
+    size_t maxRow = 80;
+    size_t maxColumn = 80;
+    size_t cellLen = 8;
+    size_t maxInfoCellWidth = 64;
+    std::pair<size_t, size_t> firstCellCoordinates = {1 * cellLen, 5};
+    std::pair<size_t, size_t> cursorToCoordinates = {20, 0};
+    std::pair<size_t, size_t> cursorToFormula = {20, 1};
+    std::pair<size_t, size_t> cursorToValue = {20, 2};
     WINDOW *win;
+    Sheet sheet;
 
-    std::string headerLetter(int colNum);
-    std::string formatCell(std::string, const size_t size);
+    static std::string headerLetter(int colNum);
 
 };
 

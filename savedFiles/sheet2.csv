@@ -1,7 +1,5 @@
+=CONCAT(A2,A3,lala);=SIN(10+A2);;;=A3;
+=E1;3;4;;;
+=A2;;;;;
 ;;;;;
-=A1+10;;;;;
-=A2+15;;=CONCAT(E4,A2,CONCAT(E4, E4, E4));;;
-=A3+A2+A1;;;=20+SIN(A1+2+(2+2));=CONCAT(A1, 3040, 2+3+SIN(10), kslakad);
-=A4+13;;;=(3+(2));;
-=A5+13+C3;;;;;
-=A4;;;;;
+;;=CONCAT(D5, E5,koka);pepsi;lakatos;

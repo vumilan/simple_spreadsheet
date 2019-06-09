@@ -4,85 +4,75 @@
 
 #include "sheetController.h"
 
-SheetController::SheetController(){
-    row = 0, col = 0;
+SheetController::SheetController() {
+    x = 1, y = 1;
 }
 
-void SheetController::moveLeft(WINDOW* win){
-    if(col > 0)
-        --col;
-    wmove(win, row+1, col*maxCellSize+8);
+void SheetController::moveLeft(SheetView &view) {
+    if (x > 1)
+        --x;
+    view.updateCellValueView(std::make_pair(x, y));
 }
 
-void SheetController::moveRight(WINDOW* win){
-    if(col < maxCol)
-        ++col;
-    wmove(win, row+1, col*maxCellSize+8);
+void SheetController::moveRight(SheetView &view) {
+    if (x < view.getMaxColumn())
+        ++x;
+    view.updateCellValueView(std::make_pair(x, y));
 }
 
-void SheetController::moveUp(WINDOW* win){
-    if(row > 0)
-        --row;
-    wmove(win, row+1, col*maxCellSize+8);
+void SheetController::moveUp(SheetView &view) {
+    if (y > 1)
+        --y;
+    view.updateCellValueView(std::make_pair(x, y));
 }
 
-void SheetController::moveDown(WINDOW* win){
-    if(row < maxRow)
-        ++row;
-    wmove(win, row+1, col*maxCellSize+8);
+void SheetController::moveDown(SheetView &view) {
+    if (y < view.getMaxRow())
+        ++y;
+    view.updateCellValueView(std::make_pair(x, y));
 }
 
-void SheetController::openEditor(Sheet &sheet, std::pair<size_t, size_t> cursor){
-    EditWindow edit(cursor);
-    std::string s1;
-
-    if(!sheet.getCell(cursor.getRowNum(),cursor.getColNum()).isEmpty())
-        s1 = sheet.getCell(cursor.getRowNum(), cursor.getColNum()).getString();
-
-    edit.drawWindow(s1.c_str());
-    edit.openEditor(sheet);
-    edit.deleteWindow();
-    curs_set(0);
+void SheetController::pressedEnter(SheetView &view) {
+    int enteredKey;
+    std::string str;
+    while ((enteredKey = wgetch(view.getWin())) != '\n') {
+        if (enteredKey == KEY_BACKSPACE && !str.empty())
+            str = str.substr(0, str.size() - 1);
+        else
+            str += (char) enteredKey;
+        view.writingInCell(std::make_pair(x, y), str);
+    }
+    view.getSheet().put(x, y, str);
+    view.updateCellValueView(std::make_pair(x, y));
+    view.drawSheet();
 }
 
-void SheetController::pressEnter(Sheet &sheet, std::pair<size_t, size_t> cursor){
-    openEditor(sheet,cursor);
-}
+void SheetController::handleInput(SheetView &view, int enteredKey) {
+    switch (enteredKey) {
 
-void SheetController::pressBackspace(Sheet &sheet, std::pair<size_t, size_t> cursor){
-    if(!sheet.getCell(cursor.getRowNum(),cursor.getColNum()).isEmpty())
-        sheet.getCell(cursor.getRowNum(), cursor.getColNum()).empty();
-}
-
-void SheetController::handleInput(WINDOW* win, std::pair<size_t, size_t> cursor, Sheet &sheet, int ch){
-    switch(ch){
-
-        case	KEY_LEFT:
-            moveLeft(win);
+        case KEY_LEFT:
+            moveLeft(view);
             break;
 
-        case	KEY_RIGHT:
-            moveRight(win);
+        case KEY_RIGHT:
+            moveRight(view);
             break;
 
-        case	KEY_UP:
-            moveUp(win);
+        case KEY_UP:
+            moveUp(view);
             break;
 
-        case	KEY_DOWN:
-            moveDown(win);
+        case KEY_DOWN:
+            moveDown(view);
             break;
 
-        case	KEY_BACKSPACE:
-            pressBackspace(sheet,cursor);
+        case KEY_BACKSPACE:
+
             break;
 
-        case	'\n':
-        case	KEY_ENTER:
-            pressEnter(sheet,cursor);
-            break;
-
-        case	'q':
+        case '\n':
+        case KEY_ENTER:
+            pressedEnter(view);
             break;
 
         default:
@@ -90,23 +80,23 @@ void SheetController::handleInput(WINDOW* win, std::pair<size_t, size_t> cursor,
     }
 }
 
-void SheetController::run(Sheet &sheet){
-    SheetView view;
-    view.initHeader();
-    view.drawSheet(sheet);
-    wmove(view.getWin(), 1,8);
-
-    int command;
-    do{
-        handleInput(view.getWin(), view.getCursor(), sheet, command);
-        wclear(view.getWin());
-        view.setCursor(row,col);
-        view.initHeader();
-        view.drawSheet(sheet);
-        view.drawCursor(sheet);
-        wrefresh(view.getWin());
-
-    }while((command = wgetch(view.getWin())) != 'q');
-
+void SheetController::run(Sheet &sheet) {
+    SheetView view(sheet);
+    view.drawHeader();
+    view.drawSheet();
+    int enteredKey;
+    while ((enteredKey = wgetch(view.getWin())) != 'q' && enteredKey != 's') {
+        handleInput(view, enteredKey);
+    }
     view.exitSheet();
+    if (enteredKey == 's') {
+        std::cout << "Enter a name for this sheet to be saved:" << std::endl;
+        std::string sheetName;
+        while (std::getline(std::cin, sheetName)) {
+            if (!sheetName.empty()) {
+                view.getSheet().save(sheetName);
+                break;
+            }
+        }
+    }
 }

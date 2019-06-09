@@ -4,12 +4,11 @@
 
 #include "sheet.h"
 
-/// constructor that initializes Sheet class with a name, maxRow and maxColumn set to default 1
-Sheet::Sheet(std::string name) : name(std::move(name)), maxRow(1), maxColumn(1) {}
+/// constructor that initializes Sheet class with maxRow and maxColumn set to default 1
+Sheet::Sheet() : maxRow(1), maxColumn(1) {}
 
 /// copy operator
 Sheet &Sheet::operator=(const Sheet &sheet) {
-    name = sheet.name;
     maxRow = sheet.maxRow;
     maxColumn = sheet.maxColumn;
     cells = sheet.cells;
@@ -242,7 +241,7 @@ void Sheet::put(size_t x, size_t y, const std::string &value) {
 }
 
 /**
- * check if input string is a cell coordinate (AAA222 is a coordinate, A2B is not)
+ * Check if input string is a cell coordinate (AAA222 is a coordinate, A2B is not)
  * @param str
  * @return bool
  */
@@ -258,7 +257,7 @@ bool Sheet::isACellCoordinate(const std::string &str) {
 }
 
 /**
- * convert string to cell coordinate
+ * Convert string to cell coordinate
  * @param str
  * @return
  */
@@ -300,12 +299,12 @@ int Sheet::findFunction(const std::string &str) {
  * @param width of window to be printed
  * \param height of window to be printed
  */
-void Sheet::printSheet(size_t x, size_t y, size_t width, size_t height) {
-    std::cout << name << std::endl;
-    for (auto &cell : cells) {
-        std::cout << "[" << cell.first.first << ":" << cell.first.second << "] " << *cell.second << std::endl;
-    }
-}
+//void Sheet::printSheet(size_t x, size_t y, size_t width, size_t height) {
+//    std::cout << name << std::endl;
+//    for (auto &cell : cells) {
+//        std::cout << "[" << cell.first.first << ":" << cell.first.second << "] " << *cell.second << std::endl;
+//    }
+//}
 
 /**
  * Saves this sheet into a .csv file with given name
@@ -326,4 +325,28 @@ void Sheet::save(const std::string &fileName) {
         newFile << '\n';
     }
     newFile.close();
+}
+
+/**
+ * Getter of map of cells
+ * @return map<std::pair<size_t, size_t>
+ */
+const std::map<std::pair<size_t, size_t>, std::shared_ptr<Cell>> &Sheet::getCells() const {
+    return cells;
+}
+
+/**
+ * Getter of maxRow
+ * @return size_t
+ */
+size_t Sheet::getMaxRow() const {
+    return maxRow;
+}
+
+/**
+ * Getter of maxColumn
+ * @return size_t
+ */
+size_t Sheet::getMaxColumn() const {
+    return maxColumn;
 }
