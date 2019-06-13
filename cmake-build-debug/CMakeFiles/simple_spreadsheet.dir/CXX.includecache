@@ -32,6 +32,10 @@ memory
 string
 -
 
+/Users/vumilan/CLionProjects/PA2/semwork/simple_spreadsheet/src/expFunction.cpp
+expFunction.h
+/Users/vumilan/CLionProjects/PA2/semwork/simple_spreadsheet/src/expFunction.h
+
 /Users/vumilan/CLionProjects/PA2/semwork/simple_spreadsheet/src/expFunction.h
 exp.h
 /Users/vumilan/CLionProjects/PA2/semwork/simple_spreadsheet/src/exp.h
@@ -41,10 +45,16 @@ vector
 -
 iostream
 -
+sstream
+-
 math.h
 -
 exceptions/errorCellLinkException.h
 /Users/vumilan/CLionProjects/PA2/semwork/simple_spreadsheet/src/exceptions/errorCellLinkException.h
+
+/Users/vumilan/CLionProjects/PA2/semwork/simple_spreadsheet/src/expNode.cpp
+expNode.h
+/Users/vumilan/CLionProjects/PA2/semwork/simple_spreadsheet/src/expNode.h
 
 /Users/vumilan/CLionProjects/PA2/semwork/simple_spreadsheet/src/expNode.h
 exp.h
@@ -54,6 +64,8 @@ exceptions/divisionByZeroException.h
 iostream
 -
 memory
+-
+sstream
 -
 
 /Users/vumilan/CLionProjects/PA2/semwork/simple_spreadsheet/src/expTerm.h
@@ -101,8 +113,8 @@ sheet.h
 /Users/vumilan/CLionProjects/PA2/semwork/simple_spreadsheet/src/sheet.h
 textCell.h
 /Users/vumilan/CLionProjects/PA2/semwork/simple_spreadsheet/src/textCell.h
-ncurses.h
-/Users/vumilan/CLionProjects/PA2/semwork/simple_spreadsheet/src/ncurses.h
+sheetController.h
+/Users/vumilan/CLionProjects/PA2/semwork/simple_spreadsheet/src/sheetController.h
 
 /Users/vumilan/CLionProjects/PA2/semwork/simple_spreadsheet/src/sheet.cpp
 sheet.h
@@ -135,6 +147,28 @@ expFunction.h
 /Users/vumilan/CLionProjects/PA2/semwork/simple_spreadsheet/src/expFunction.h
 fstream
 -
+
+/Users/vumilan/CLionProjects/PA2/semwork/simple_spreadsheet/src/sheetController.cpp
+sheetController.h
+/Users/vumilan/CLionProjects/PA2/semwork/simple_spreadsheet/src/sheetController.h
+
+/Users/vumilan/CLionProjects/PA2/semwork/simple_spreadsheet/src/sheetController.h
+sheetView.h
+/Users/vumilan/CLionProjects/PA2/semwork/simple_spreadsheet/src/sheetView.h
+ncurses.h
+-
+
+/Users/vumilan/CLionProjects/PA2/semwork/simple_spreadsheet/src/sheetView.cpp
+sheetView.h
+/Users/vumilan/CLionProjects/PA2/semwork/simple_spreadsheet/src/sheetView.h
+
+/Users/vumilan/CLionProjects/PA2/semwork/simple_spreadsheet/src/sheetView.h
+ncurses.h
+-
+string
+-
+sheet.h
+/Users/vumilan/CLionProjects/PA2/semwork/simple_spreadsheet/src/sheet.h
 
 /Users/vumilan/CLionProjects/PA2/semwork/simple_spreadsheet/src/textCell.h
 string

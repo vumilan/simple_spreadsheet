@@ -8,13 +8,7 @@
 Sheet::Sheet() : maxRow(1), maxColumn(1) {}
 
 /// copy operator
-Sheet &Sheet::operator=(const Sheet &sheet) {
-    maxRow = sheet.maxRow;
-    maxColumn = sheet.maxColumn;
-    cells = sheet.cells;
-    definedFunctions = sheet.definedFunctions;
-    return *this;
-}
+Sheet &Sheet::operator=(const Sheet &sheet) = default;
 
 /**
  * Add cell into a sheet, if cell already exists, update all parents referencing from this cell
@@ -35,7 +29,7 @@ std::shared_ptr<Cell> Sheet::addCell(std::pair<size_t, size_t> coordinates, std:
         if (ptrToCell->hasError()) {
             return ptrToCell;
         }
-        // update expression tree for each descendant cell
+        // update expression tree for each descendant cell if there is no error in cell
         updateDescendants(ptrToCell);
     }
     return ptrToCell;
@@ -52,6 +46,7 @@ void Sheet::updateDescendants(std::shared_ptr<Cell> &ptrToCell) {
         std::shared_ptr<Exp> newExpTree;
         newExpTree = parseExpr(descendant, removeWhiteSpaces(descendant->formula()).substr(1));
         descendant->setExpTree(newExpTree);
+        // call recursively for each descendant
         updateDescendants(descendant);
     }
 }
@@ -188,7 +183,7 @@ Sheet::makeExpFunction(int functionType, std::shared_ptr<Cell> &newCellPtr, cons
  * Helper function of parseExpr to control creation of a cell reference expression
  * @param newCellPtr
  * @param str
- * @return mshared_ptr<Exp>
+ * @return shared_ptr<Exp>
  */
 std::shared_ptr<Exp> Sheet::makeCellReference(std::shared_ptr<Cell> &newCellPtr, const std::string &str) {
     std::pair<size_t, size_t> coordinates = convertToCellCoordinate(str);
@@ -210,7 +205,8 @@ std::shared_ptr<Exp> Sheet::makeCellReference(std::shared_ptr<Cell> &newCellPtr,
  */
 std::string Sheet::removeWhiteSpaces(const std::string &value) {
     std::string str = value;
-    str.erase(remove_if(str.begin(), str.end(), isspace), str.end());
+    std::string::iterator end_pos = std::remove(str.begin(), str.end(), ' ');
+    str.erase(end_pos, str.end());
     return str;
 }
 
@@ -293,27 +289,12 @@ int Sheet::findFunction(const std::string &str) {
 }
 
 /**
- * Prints a window set by parameters into console
- * @param x is a row index
- * @param y is a column index
- * @param width of window to be printed
- * \param height of window to be printed
- */
-//void Sheet::printSheet(size_t x, size_t y, size_t width, size_t height) {
-//    std::cout << name << std::endl;
-//    for (auto &cell : cells) {
-//        std::cout << "[" << cell.first.first << ":" << cell.first.second << "] " << *cell.second << std::endl;
-//    }
-//}
-
-/**
  * Saves this sheet into a .csv file with given name
  * @param fileName
  */
 void Sheet::save(const std::string &fileName) {
     std::ofstream newFile;
-    std::cout << "savedFiles/" + fileName << std::endl;
-    newFile.open("savedFiles/" + fileName);
+    newFile.open("examples/" + fileName);
     for (size_t y = 1; y <= maxRow; ++y) {
         for (size_t x = 1; x <= maxColumn; ++x) {
             auto cellsIter = cells.find(std::make_pair(x, y));
@@ -324,6 +305,7 @@ void Sheet::save(const std::string &fileName) {
         }
         newFile << '\n';
     }
+    std::cout << "File: " + fileName + " was saved into /examples." << std::endl;
     newFile.close();
 }
 

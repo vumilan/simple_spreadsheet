@@ -47,6 +47,8 @@ CMakeFiles/simple_spreadsheet.dir/src/main.cpp.o: ../src/expTerm.h
 CMakeFiles/simple_spreadsheet.dir/src/main.cpp.o: ../src/formulaCell.h
 CMakeFiles/simple_spreadsheet.dir/src/main.cpp.o: ../src/main.cpp
 CMakeFiles/simple_spreadsheet.dir/src/main.cpp.o: ../src/sheet.h
+CMakeFiles/simple_spreadsheet.dir/src/main.cpp.o: ../src/sheetController.h
+CMakeFiles/simple_spreadsheet.dir/src/main.cpp.o: ../src/sheetView.h
 CMakeFiles/simple_spreadsheet.dir/src/main.cpp.o: ../src/textCell.h
 
 CMakeFiles/simple_spreadsheet.dir/src/sheet.cpp.o: ../src/cell.h
@@ -62,6 +64,37 @@ CMakeFiles/simple_spreadsheet.dir/src/sheet.cpp.o: ../src/formulaCell.h
 CMakeFiles/simple_spreadsheet.dir/src/sheet.cpp.o: ../src/sheet.cpp
 CMakeFiles/simple_spreadsheet.dir/src/sheet.cpp.o: ../src/sheet.h
 CMakeFiles/simple_spreadsheet.dir/src/sheet.cpp.o: ../src/textCell.h
+
+CMakeFiles/simple_spreadsheet.dir/src/sheetController.cpp.o: ../src/cell.h
+CMakeFiles/simple_spreadsheet.dir/src/sheetController.cpp.o: ../src/exceptions/cycleException.h
+CMakeFiles/simple_spreadsheet.dir/src/sheetController.cpp.o: ../src/exceptions/divisionByZeroException.h
+CMakeFiles/simple_spreadsheet.dir/src/sheetController.cpp.o: ../src/exceptions/errorCellLinkException.h
+CMakeFiles/simple_spreadsheet.dir/src/sheetController.cpp.o: ../src/exceptions/notANumberException.h
+CMakeFiles/simple_spreadsheet.dir/src/sheetController.cpp.o: ../src/exp.h
+CMakeFiles/simple_spreadsheet.dir/src/sheetController.cpp.o: ../src/expFunction.h
+CMakeFiles/simple_spreadsheet.dir/src/sheetController.cpp.o: ../src/expNode.h
+CMakeFiles/simple_spreadsheet.dir/src/sheetController.cpp.o: ../src/expTerm.h
+CMakeFiles/simple_spreadsheet.dir/src/sheetController.cpp.o: ../src/formulaCell.h
+CMakeFiles/simple_spreadsheet.dir/src/sheetController.cpp.o: ../src/sheet.h
+CMakeFiles/simple_spreadsheet.dir/src/sheetController.cpp.o: ../src/sheetController.cpp
+CMakeFiles/simple_spreadsheet.dir/src/sheetController.cpp.o: ../src/sheetController.h
+CMakeFiles/simple_spreadsheet.dir/src/sheetController.cpp.o: ../src/sheetView.h
+CMakeFiles/simple_spreadsheet.dir/src/sheetController.cpp.o: ../src/textCell.h
+
+CMakeFiles/simple_spreadsheet.dir/src/sheetView.cpp.o: ../src/cell.h
+CMakeFiles/simple_spreadsheet.dir/src/sheetView.cpp.o: ../src/exceptions/cycleException.h
+CMakeFiles/simple_spreadsheet.dir/src/sheetView.cpp.o: ../src/exceptions/divisionByZeroException.h
+CMakeFiles/simple_spreadsheet.dir/src/sheetView.cpp.o: ../src/exceptions/errorCellLinkException.h
+CMakeFiles/simple_spreadsheet.dir/src/sheetView.cpp.o: ../src/exceptions/notANumberException.h
+CMakeFiles/simple_spreadsheet.dir/src/sheetView.cpp.o: ../src/exp.h
+CMakeFiles/simple_spreadsheet.dir/src/sheetView.cpp.o: ../src/expFunction.h
+CMakeFiles/simple_spreadsheet.dir/src/sheetView.cpp.o: ../src/expNode.h
+CMakeFiles/simple_spreadsheet.dir/src/sheetView.cpp.o: ../src/expTerm.h
+CMakeFiles/simple_spreadsheet.dir/src/sheetView.cpp.o: ../src/formulaCell.h
+CMakeFiles/simple_spreadsheet.dir/src/sheetView.cpp.o: ../src/sheet.h
+CMakeFiles/simple_spreadsheet.dir/src/sheetView.cpp.o: ../src/sheetView.cpp
+CMakeFiles/simple_spreadsheet.dir/src/sheetView.cpp.o: ../src/sheetView.h
+CMakeFiles/simple_spreadsheet.dir/src/sheetView.cpp.o: ../src/textCell.h
 
 CMakeFiles/simple_spreadsheet.dir/src/textCell.cpp.o: ../src/cell.h
 CMakeFiles/simple_spreadsheet.dir/src/textCell.cpp.o: ../src/exp.h
