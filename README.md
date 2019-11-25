@@ -1,24 +1,24 @@
 # Simple spreadsheet
 
-This is an implementation of a simple spreadsheet based on Excel, written in C++.
+This is an implementation of a simple spreadsheet in terminal based on Excel, written in C++.
 
 ### Requirements
 You need to have ncurses installed. On a classic linux distribution, just do:
-> ```yum install ncurses-devel```
+```yum install ncurses-devel```
 
 ### Makefile commands
 
 To run this project, first clone this repository:
-> ```git clone git@github.com:vumilan/simple_spreadsheet.git```
+```git clone git@github.com:vumilan/simple_spreadsheet.git```
 
 Go into the project repo:
-> ```cd simple_spreadsheet```
+```cd simple_spreadsheet```
 
 Make compilation files:
-> ```make compile```
+```make compile```
 
 And run the project:
-> ```make run```
+```make run```
 
 ### Project 
 Upon running the project, you will be greeted with:
@@ -50,7 +50,7 @@ Right of this moment, the spreadsheet editor supports:
 ### Documentation
 
 This project also has a Doxyfile, if you wish to view the documentation:
-> ```make doc```
+```make doc```
 
 Finally, to clean the repository from the created files:
-> ```make clean```
+```make clean```
