@@ -8,38 +8,38 @@
 		<Option virtualFolders="CMake Files\;"/>
 		<Build>
 			<Target title="all">
-				<Option working_dir="/Users/vumilan/CLionProjects/PA2/semwork/simple_spreadsheet/cmake-build-debug"/>
+				<Option working_dir="/Users/vumilan/simple_spreadsheet/cmake-build-debug"/>
 				<Option type="4"/>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j4 -f &quot;/Users/vumilan/CLionProjects/PA2/semwork/simple_spreadsheet/cmake-build-debug/Makefile&quot;  VERBOSE=1 all"/>
-					<CompileFile command="/usr/bin/make -j4 -f &quot;/Users/vumilan/CLionProjects/PA2/semwork/simple_spreadsheet/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j4 -f &quot;/Users/vumilan/CLionProjects/PA2/semwork/simple_spreadsheet/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j4 -f &quot;/Users/vumilan/CLionProjects/PA2/semwork/simple_spreadsheet/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make -j4 -f &quot;/Users/vumilan/simple_spreadsheet/cmake-build-debug/Makefile&quot;  VERBOSE=1 all"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/Users/vumilan/simple_spreadsheet/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/Users/vumilan/simple_spreadsheet/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/Users/vumilan/simple_spreadsheet/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="rebuild_cache">
-				<Option working_dir="/Users/vumilan/CLionProjects/PA2/semwork/simple_spreadsheet/cmake-build-debug"/>
+				<Option working_dir="/Users/vumilan/simple_spreadsheet/cmake-build-debug"/>
 				<Option type="4"/>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j4 -f &quot;/Users/vumilan/CLionProjects/PA2/semwork/simple_spreadsheet/cmake-build-debug/Makefile&quot;  VERBOSE=1 rebuild_cache"/>
-					<CompileFile command="/usr/bin/make -j4 -f &quot;/Users/vumilan/CLionProjects/PA2/semwork/simple_spreadsheet/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j4 -f &quot;/Users/vumilan/CLionProjects/PA2/semwork/simple_spreadsheet/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j4 -f &quot;/Users/vumilan/CLionProjects/PA2/semwork/simple_spreadsheet/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make -j4 -f &quot;/Users/vumilan/simple_spreadsheet/cmake-build-debug/Makefile&quot;  VERBOSE=1 rebuild_cache"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/Users/vumilan/simple_spreadsheet/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/Users/vumilan/simple_spreadsheet/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/Users/vumilan/simple_spreadsheet/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="edit_cache">
-				<Option working_dir="/Users/vumilan/CLionProjects/PA2/semwork/simple_spreadsheet/cmake-build-debug"/>
+				<Option working_dir="/Users/vumilan/simple_spreadsheet/cmake-build-debug"/>
 				<Option type="4"/>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j4 -f &quot;/Users/vumilan/CLionProjects/PA2/semwork/simple_spreadsheet/cmake-build-debug/Makefile&quot;  VERBOSE=1 edit_cache"/>
-					<CompileFile command="/usr/bin/make -j4 -f &quot;/Users/vumilan/CLionProjects/PA2/semwork/simple_spreadsheet/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j4 -f &quot;/Users/vumilan/CLionProjects/PA2/semwork/simple_spreadsheet/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j4 -f &quot;/Users/vumilan/CLionProjects/PA2/semwork/simple_spreadsheet/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make -j4 -f &quot;/Users/vumilan/simple_spreadsheet/cmake-build-debug/Makefile&quot;  VERBOSE=1 edit_cache"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/Users/vumilan/simple_spreadsheet/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/Users/vumilan/simple_spreadsheet/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/Users/vumilan/simple_spreadsheet/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="simple_spreadsheet">
-				<Option output="/Users/vumilan/CLionProjects/PA2/semwork/simple_spreadsheet/cmake-build-debug/simple_spreadsheet" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="/Users/vumilan/CLionProjects/PA2/semwork/simple_spreadsheet/cmake-build-debug"/>
+				<Option output="/Users/vumilan/simple_spreadsheet/cmake-build-debug/simple_spreadsheet" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/vumilan/simple_spreadsheet/cmake-build-debug"/>
 				<Option object_output="./"/>
 				<Option type="1"/>
 				<Option compiler="clang"/>
@@ -52,15 +52,15 @@
 					<Add directory="/Library/Frameworks"/>
 				</Compiler>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j4 -f &quot;/Users/vumilan/CLionProjects/PA2/semwork/simple_spreadsheet/cmake-build-debug/Makefile&quot;  VERBOSE=1 simple_spreadsheet"/>
-					<CompileFile command="/usr/bin/make -j4 -f &quot;/Users/vumilan/CLionProjects/PA2/semwork/simple_spreadsheet/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j4 -f &quot;/Users/vumilan/CLionProjects/PA2/semwork/simple_spreadsheet/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j4 -f &quot;/Users/vumilan/CLionProjects/PA2/semwork/simple_spreadsheet/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make -j4 -f &quot;/Users/vumilan/simple_spreadsheet/cmake-build-debug/Makefile&quot;  VERBOSE=1 simple_spreadsheet"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/Users/vumilan/simple_spreadsheet/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/Users/vumilan/simple_spreadsheet/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/Users/vumilan/simple_spreadsheet/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="simple_spreadsheet/fast">
-				<Option output="/Users/vumilan/CLionProjects/PA2/semwork/simple_spreadsheet/cmake-build-debug/simple_spreadsheet" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="/Users/vumilan/CLionProjects/PA2/semwork/simple_spreadsheet/cmake-build-debug"/>
+				<Option output="/Users/vumilan/simple_spreadsheet/cmake-build-debug/simple_spreadsheet" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/vumilan/simple_spreadsheet/cmake-build-debug"/>
 				<Option object_output="./"/>
 				<Option type="1"/>
 				<Option compiler="clang"/>
@@ -73,77 +73,77 @@
 					<Add directory="/Library/Frameworks"/>
 				</Compiler>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j4 -f &quot;/Users/vumilan/CLionProjects/PA2/semwork/simple_spreadsheet/cmake-build-debug/Makefile&quot;  VERBOSE=1 simple_spreadsheet/fast"/>
-					<CompileFile command="/usr/bin/make -j4 -f &quot;/Users/vumilan/CLionProjects/PA2/semwork/simple_spreadsheet/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j4 -f &quot;/Users/vumilan/CLionProjects/PA2/semwork/simple_spreadsheet/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j4 -f &quot;/Users/vumilan/CLionProjects/PA2/semwork/simple_spreadsheet/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make -j4 -f &quot;/Users/vumilan/simple_spreadsheet/cmake-build-debug/Makefile&quot;  VERBOSE=1 simple_spreadsheet/fast"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/Users/vumilan/simple_spreadsheet/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/Users/vumilan/simple_spreadsheet/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/Users/vumilan/simple_spreadsheet/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 		</Build>
-		<Unit filename="/Users/vumilan/CLionProjects/PA2/semwork/simple_spreadsheet/src/cell.cpp">
+		<Unit filename="/Users/vumilan/simple_spreadsheet/src/cell.cpp">
 			<Option target="simple_spreadsheet"/>
 		</Unit>
-		<Unit filename="/Users/vumilan/CLionProjects/PA2/semwork/simple_spreadsheet/src/cell.h">
+		<Unit filename="/Users/vumilan/simple_spreadsheet/src/cell.h">
 			<Option target="simple_spreadsheet"/>
 		</Unit>
-		<Unit filename="/Users/vumilan/CLionProjects/PA2/semwork/simple_spreadsheet/src/exp.cpp">
+		<Unit filename="/Users/vumilan/simple_spreadsheet/src/exp.cpp">
 			<Option target="simple_spreadsheet"/>
 		</Unit>
-		<Unit filename="/Users/vumilan/CLionProjects/PA2/semwork/simple_spreadsheet/src/exp.h">
+		<Unit filename="/Users/vumilan/simple_spreadsheet/src/exp.h">
 			<Option target="simple_spreadsheet"/>
 		</Unit>
-		<Unit filename="/Users/vumilan/CLionProjects/PA2/semwork/simple_spreadsheet/src/expFunction.cpp">
+		<Unit filename="/Users/vumilan/simple_spreadsheet/src/expFunction.cpp">
 			<Option target="simple_spreadsheet"/>
 		</Unit>
-		<Unit filename="/Users/vumilan/CLionProjects/PA2/semwork/simple_spreadsheet/src/expFunction.h">
+		<Unit filename="/Users/vumilan/simple_spreadsheet/src/expFunction.h">
 			<Option target="simple_spreadsheet"/>
 		</Unit>
-		<Unit filename="/Users/vumilan/CLionProjects/PA2/semwork/simple_spreadsheet/src/expNode.cpp">
+		<Unit filename="/Users/vumilan/simple_spreadsheet/src/expNode.cpp">
 			<Option target="simple_spreadsheet"/>
 		</Unit>
-		<Unit filename="/Users/vumilan/CLionProjects/PA2/semwork/simple_spreadsheet/src/expNode.h">
+		<Unit filename="/Users/vumilan/simple_spreadsheet/src/expNode.h">
 			<Option target="simple_spreadsheet"/>
 		</Unit>
-		<Unit filename="/Users/vumilan/CLionProjects/PA2/semwork/simple_spreadsheet/src/expTerm.cpp">
+		<Unit filename="/Users/vumilan/simple_spreadsheet/src/expTerm.cpp">
 			<Option target="simple_spreadsheet"/>
 		</Unit>
-		<Unit filename="/Users/vumilan/CLionProjects/PA2/semwork/simple_spreadsheet/src/expTerm.h">
+		<Unit filename="/Users/vumilan/simple_spreadsheet/src/expTerm.h">
 			<Option target="simple_spreadsheet"/>
 		</Unit>
-		<Unit filename="/Users/vumilan/CLionProjects/PA2/semwork/simple_spreadsheet/src/formulaCell.cpp">
+		<Unit filename="/Users/vumilan/simple_spreadsheet/src/formulaCell.cpp">
 			<Option target="simple_spreadsheet"/>
 		</Unit>
-		<Unit filename="/Users/vumilan/CLionProjects/PA2/semwork/simple_spreadsheet/src/formulaCell.h">
+		<Unit filename="/Users/vumilan/simple_spreadsheet/src/formulaCell.h">
 			<Option target="simple_spreadsheet"/>
 		</Unit>
-		<Unit filename="/Users/vumilan/CLionProjects/PA2/semwork/simple_spreadsheet/src/main.cpp">
+		<Unit filename="/Users/vumilan/simple_spreadsheet/src/main.cpp">
 			<Option target="simple_spreadsheet"/>
 		</Unit>
-		<Unit filename="/Users/vumilan/CLionProjects/PA2/semwork/simple_spreadsheet/src/sheet.cpp">
+		<Unit filename="/Users/vumilan/simple_spreadsheet/src/sheet.cpp">
 			<Option target="simple_spreadsheet"/>
 		</Unit>
-		<Unit filename="/Users/vumilan/CLionProjects/PA2/semwork/simple_spreadsheet/src/sheet.h">
+		<Unit filename="/Users/vumilan/simple_spreadsheet/src/sheet.h">
 			<Option target="simple_spreadsheet"/>
 		</Unit>
-		<Unit filename="/Users/vumilan/CLionProjects/PA2/semwork/simple_spreadsheet/src/sheetController.cpp">
+		<Unit filename="/Users/vumilan/simple_spreadsheet/src/sheetController.cpp">
 			<Option target="simple_spreadsheet"/>
 		</Unit>
-		<Unit filename="/Users/vumilan/CLionProjects/PA2/semwork/simple_spreadsheet/src/sheetController.h">
+		<Unit filename="/Users/vumilan/simple_spreadsheet/src/sheetController.h">
 			<Option target="simple_spreadsheet"/>
 		</Unit>
-		<Unit filename="/Users/vumilan/CLionProjects/PA2/semwork/simple_spreadsheet/src/sheetView.cpp">
+		<Unit filename="/Users/vumilan/simple_spreadsheet/src/sheetView.cpp">
 			<Option target="simple_spreadsheet"/>
 		</Unit>
-		<Unit filename="/Users/vumilan/CLionProjects/PA2/semwork/simple_spreadsheet/src/sheetView.h">
+		<Unit filename="/Users/vumilan/simple_spreadsheet/src/sheetView.h">
 			<Option target="simple_spreadsheet"/>
 		</Unit>
-		<Unit filename="/Users/vumilan/CLionProjects/PA2/semwork/simple_spreadsheet/src/textCell.cpp">
+		<Unit filename="/Users/vumilan/simple_spreadsheet/src/textCell.cpp">
 			<Option target="simple_spreadsheet"/>
 		</Unit>
-		<Unit filename="/Users/vumilan/CLionProjects/PA2/semwork/simple_spreadsheet/src/textCell.h">
+		<Unit filename="/Users/vumilan/simple_spreadsheet/src/textCell.h">
 			<Option target="simple_spreadsheet"/>
 		</Unit>
-		<Unit filename="/Users/vumilan/CLionProjects/PA2/semwork/simple_spreadsheet/CMakeLists.txt">
+		<Unit filename="/Users/vumilan/simple_spreadsheet/CMakeLists.txt">
 			<Option virtualFolder="CMake Files\"/>
 		</Unit>
 	</Project>
