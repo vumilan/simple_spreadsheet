@@ -9,6 +9,8 @@ jobs:
     
     steps:
     - uses: actions/checkout@v1
+    - name: install ncurses
+      run: yum install ncurses-devel
     - name: make
       run: make compile
     - name: make check
